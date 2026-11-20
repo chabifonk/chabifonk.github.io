@@ -7,4 +7,5 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.chabifonk.fr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.chabifonk.fr/en/"/></url>
   <url><loc>https://www.chabifonk.fr/epk/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.chabifonk.fr/epk/en/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

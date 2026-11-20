@@ -264,8 +264,10 @@ a.row:hover .l{text-decoration:underline;text-underline-offset:4px}
 .pack small{display:block;color:var(--gris);font-size:15px;margin-top:4px}
 
 footer{padding:50px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--ligne);background:rgba(10,6,18,.92)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-footer .logo{width:140px}
+footer .wrap{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center}
+footer .sph{justify-self:end;width:130px;height:auto;filter:drop-shadow(0 0 26px rgba(160,90,255,.45))}
+footer .foot{grid-column:1/-1}
+footer .logo{width:140px;justify-self:start}
 footer .plat{margin:0;gap:14px}
 footer .plat a,footer .plat img{width:30px;height:30px}
 .foot{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;color:var(--gris);font-size:13px;border-top:1px solid var(--ligne);padding-top:18px}
@@ -323,7 +325,8 @@ footer .plat a,footer .plat img{width:30px;height:30px}
   .lists{grid-template-columns:1fr;gap:36px}
   .booking{padding:64px 0}
   .bk{grid-template-columns:1fr;gap:28px}
-  footer .wrap{flex-direction:column;text-align:center}
+  footer .wrap{grid-template-columns:1fr;justify-items:center;text-align:center}
+  footer .logo,footer .sph{justify-self:center}footer .sph{width:96px}
   .foot{justify-content:center;text-align:center}
 }
 @media (max-width:370px){.top .plat a.opt{display:none}}
@@ -376,7 +379,7 @@ footer .plat a,footer .plat img{width:30px;height:30px}
   <div class="stats">
     <div><strong>15</strong><span data-t="st1">ans en orbite</span></div>
     <div><strong>200+</strong><span data-t="st2">concerts</span></div>
-    <div><strong>5</strong><span data-t="st3">albums</span></div>
+    <div><strong>5</strong><span data-t="st3">albums &amp; EPs</span></div>
     <div><strong>150k+</strong><span data-t="st4">écoutes</span></div>
   </div>
 </div></div>
@@ -458,7 +461,7 @@ footer .plat a,footer .plat img{width:30px;height:30px}
     <a class="cov" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener" aria-label="Écouter EXPLÖR3"><img src="img/explor3.jpg" alt="Pochette de l'album EXPLÖR3 de ChabiFönK Experience" width="800" height="817" loading="lazy"></a>
     <div>
       <div class="albtxt">
-      <p class="lede" data-t="alb">« EXPLÖR3 », le 3e album de ChabiFönK Experience, vous entraîne dans une aventure auditive cosmique marquant les 10 ans hors taxes du groupe.</p>
+      <p class="lede" data-t="alb">« EXPLÖR3 », le 3e album studio de ChabiFönK Experience, vous entraîne dans une aventure auditive cosmique marquant les 10 ans hors taxes du groupe.</p>
       <p data-t="alb2">Ce « concept album » est une véritable odyssée musicale affranchie de toutes conventions, fusion audacieuse de multiples genres, comme le rock, la musique psychédélique, la techno, la trance, la jungle, la drum &amp; bass, le dub, le krautrock, et le métal progressif. « EXPLÖR3 » vous emmènera au-delà de la stratosphère, où chaque piste est une étoile lumineuse dans la galaxie musicale unique du ChabiFönK.</p>
       <p class="muted" data-t="alb3">Disponible depuis le 2/11/2023 en CD, Vinyle et streaming ! Enregistré et mixé au Studio de l'Arnoult par Alexis Lacaze, masterisé au Studio Storm Mastering par Clément Bastiat. Artwork : SandFlake.</p>
       </div>
@@ -521,6 +524,7 @@ footer .plat a,footer .plat img{width:30px;height:30px}
     <a href="https://www.instagram.com/chabifonkexperience/" target="_blank" rel="noopener" aria-label="Instagram"><img src="img/ico/instagram.png" alt=""></a>
     <a href="https://www.facebook.com/chabifonkexperience" target="_blank" rel="noopener" aria-label="Facebook"><img src="img/ico/facebook.png" alt=""></a>
   </div>
+  <img class="sph" src="img/sphere-foot.png" alt="" loading="lazy">
   <div class="foot">
     <span data-t="copyr">© ChabiFönK Experience · power trio cosmique depuis 2011</span>
     <details><summary data-t="ml">Mentions légales</summary>
@@ -548,11 +552,11 @@ const DATES=[
 const EN={nav1:"The Experience",nav2:"Tour",nav3:"Music",nav4:"Merch",nav5:"Live",nav6:"Booking",tag:"Three alchemists, somewhere between the stars and the dancefloor.",cta1:"▶ Listen",cta2:"Tour 2026",nextlab:"Next eXperience",
 exp_k:"The Experience",exp_big:"Three alchemists, somewhere between the stars and the dancefloor, where genres dissolve into a cosmic groove.",
 exp_small:"This instrumental power trio (Keys/Bass — Guitar/Fx — Drums/Sampler) fuses <strong>psychedelic-progressive rock</strong> with sound system electronics (<strong>dub, techno, trance</strong>) in a sharp, intense and totally offbeat live show.",
-st1:"years in orbit",st2:"shows",st3:"albums",st4:"streams",s1n:"Crew",s1h:"The trio",
+st1:"years in orbit",st2:"shows",st3:"albums &amp; EPs",st4:"streams",s1n:"Crew",s1h:"The trio",
 bio1:"Picture Pink Floyd and Hendrix jamming with Hilight Tribe, High Tone and Infected Mushroom… somewhere in another dimension.",
 bio2:"Traveling between interstellar, cosmic and psychedelic sounds, these three musicians have as their common denominator emotional sharing, energy transfer and letting go!<br><br>Founded in the early 2010’s by artists from the 79 (Melle / Sainte-Soline, France) from the punk/metal, funk, reggae and street arts scenes, ChabiFönK Experience distills unique hybrid music with a “fönky” groove, fusion of rock!",
 quote:"“Big riffs à la RATM or Hendrix and the electro-underground of the Rave Party”",r1:"Keys · Bass",r2:"Guitar · Effects",r3:"Drums · Sampler",infl:"Influences",
-s2h:'<span class="pre">Tour /</span> Next e<span class="x">X</span>periences',more:"+ more dates coming",s3n:"Music",listen:"▶ Listen to EXPLÖR3",alb:"“EXPLÖR3”, ChabiFönK Experience's 3rd album, takes you on a cosmic auditory adventure marking ten years of the band.",alb2:"This ‘concept album’ is a true musical odyssey, unburdened by conventions, boldly fusing multiple genres like rock, psychedelic, techno, trance, jungle, drum &amp; bass, dub, krautrock, and progressive metal. « EXPLÖR3 » will transport you beyond the stratosphere, where each track is a radiant star in this unique musical galaxy.",alb3:"Released on 2 November 2023 on CD, vinyl and streaming. Recorded and mixed at Studio de l'Arnoult by Alexis Lacaze, mastered at Studio Storm Mastering by Clément Bastiat. Artwork: SandFlake.",cred:"Credits",credt:"Composed and arranged by ChabiFönK Experience.<br><b>David Legeron</b> “Vox Augusti”: guitars, fx and computer music · <b>Mathieu Rivaud</b> “Batmat”: cymbals, drums and clowning · <b>Yael Charton</b> “Daddy Bass”: bass, keys, fx and computer music · <b>Valentin Girard</b>: management and production.<br>Additional arrangements: Frédéric Bonnelais “Bones” on “Crunchy Milky Way” and “Pandora Project”. Recorded and mixed at Studio de l'Arnoult by Alexis Lacaze “Alec”. Mastered at Studio Storm Mastering by Clément Bastiat. Artwork: SandFlake.<br>2023 ⓒ ChabiFönK Experience ⓟ Raska",tbk:'Book the e<span class="x">X</span>perience:',
+s2h:'<span class="pre">Tour /</span> Next e<span class="x">X</span>periences',more:"+ more dates coming",s3n:"Music",listen:"▶ Listen to EXPLÖR3",alb:"“EXPLÖR3”, ChabiFönK Experience's 3rd studio album, takes you on a cosmic auditory adventure marking ten years of the band.",alb2:"This ‘concept album’ is a true musical odyssey, unburdened by conventions, boldly fusing multiple genres like rock, psychedelic, techno, trance, jungle, drum &amp; bass, dub, krautrock, and progressive metal. « EXPLÖR3 » will transport you beyond the stratosphere, where each track is a radiant star in this unique musical galaxy.",alb3:"Released on 2 November 2023 on CD, vinyl and streaming. Recorded and mixed at Studio de l'Arnoult by Alexis Lacaze, mastered at Studio Storm Mastering by Clément Bastiat. Artwork: SandFlake.",cred:"Credits",credt:"Composed and arranged by ChabiFönK Experience.<br><b>David Legeron</b> “Vox Augusti”: guitars, fx and computer music · <b>Mathieu Rivaud</b> “Batmat”: cymbals, drums and clowning · <b>Yael Charton</b> “Daddy Bass”: bass, keys, fx and computer music · <b>Valentin Girard</b>: management and production.<br>Additional arrangements: Frédéric Bonnelais “Bones” on “Crunchy Milky Way” and “Pandora Project”. Recorded and mixed at Studio de l'Arnoult by Alexis Lacaze “Alec”. Mastered at Studio Storm Mastering by Clément Bastiat. Artwork: SandFlake.<br>2023 ⓒ ChabiFönK Experience ⓟ Raska",tbk:'Book the e<span class="x">X</span>perience:',
 disco:"Discography",d1:"2018 · EP · 5 tracks",d2:"2017 · compilation · “4ème Dimension”",d3:"2015 · EP/LP · 9 tracks",d4:"2014 · live · 8 tracks",d5:"2012 · EP · remastered in 2021",
 s4n:"Merch",s4h:"Merch",mi:"All our albums are available on CD and digital, and EXPLÖR3 on vinyl too, on our Bandcamp.",m1:"EXPLÖR3 CD digipack",m2:"EXPLÖR3 vinyl",s5n:"Live",s5h:"Video transmissions",v1:"Full show · 1h30",chan:"All clips and live videos on YouTube ↗",buy:"Buy · Bandcamp ↗",buyalb:"Buy the CD or vinyl on Bandcamp ↗",buym:"See all the merch on Bandcamp ↗",
 s6n:"06 / Past orbits",s6h:"On stage with…",l1:"Festivals and venues",l2:"Shared the stage with",bkh:'Book the e<span class="x">X</span>perience',ct:"Contact",cp:"Copy",cp2:"Copy",pack:"Pro pack",packc:"Tech rider, hospitality rider, press kit, setlist",epk:"EPK · press kit",epkc:"Bio, figures, references, videos, downloadable PDF",
