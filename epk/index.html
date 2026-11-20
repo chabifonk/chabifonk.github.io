@@ -26,6 +26,12 @@ a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 .bar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:12px 16px;background:rgba(5,3,10,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--ligne)}
 .bar a{font-family:var(--m);font-size:11px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ligne);padding:9px 14px}
+.bar a.pp{border-color:var(--vert);color:var(--vert)}
+.pk{display:flex;align-items:center;gap:3mm;margin-top:2.5mm;border:1px solid var(--vert);background:linear-gradient(90deg,rgba(125,255,47,.12),rgba(125,255,47,.02));padding:2.6mm 3.5mm}
+.pk b{font-family:var(--m);font-size:9pt;letter-spacing:.14em;text-transform:uppercase;color:var(--vert);white-space:nowrap}
+.pk span{font-size:8pt;color:var(--blanc)}
+.pk i{margin-left:auto;font-style:normal;color:var(--vert);font-size:11pt}
+.contact .qrs div.g{color:var(--vert)}
 .bar a.dl{background:var(--blanc);color:var(--nuit);border-color:var(--blanc)}
 .pages{display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 16px 60px}
 .page{width:210mm;min-height:297mm;height:297mm;position:relative;overflow:hidden;background:radial-gradient(120% 70% at 80% 0%,#2b1150 0%,#14092a 45%,var(--nuit) 80%);box-shadow:0 20px 70px rgba(0,0,0,.6)}
@@ -33,6 +39,7 @@ img{display:block;max-width:100%}
 .in{position:relative;padding:11mm 13mm 10mm;height:100%;display:flex;flex-direction:column;gap:5mm}
 .k{font-family:var(--m);font-size:7.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--vert);display:flex;align-items:center;gap:6px}
 .k::before{content:"";width:8px;height:8px;background:var(--vert);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+.q{text-transform:none!important;letter-spacing:0!important;font-size:12.5pt!important;font-style:italic;font-weight:600!important}
 h2{font-weight:800;font-size:15pt;letter-spacing:.06em;text-transform:uppercase;margin:2mm 0 0;line-height:1.1}
 p{margin:0}
 .muted{color:var(--gris)}
@@ -92,11 +99,12 @@ p{margin:0}
 .contact .qrs div{text-align:center;font-family:var(--m);font-size:6pt;letter-spacing:.1em;text-transform:uppercase;color:var(--gris)}
 .contact .qrs svg{width:22mm;height:22mm;display:block;margin-bottom:1mm;background:rgba(10,6,18,.6)}
 .sm{font-size:9pt}
-.soc{display:flex;flex-wrap:wrap;gap:1.2mm;margin-top:2.5mm}
-.soc a{display:inline-flex;align-items:center;gap:1.2mm;border:1px solid var(--ligne);background:rgba(28,18,48,.7);padding:1mm 1.8mm;font-size:7.4pt}
-.soc img{width:3.6mm;height:3.6mm}
+.soc{display:flex;flex-wrap:wrap;gap:1mm;margin-top:2.5mm}
+.soc a{display:inline-flex;align-items:center;gap:1.2mm;border:1px solid var(--ligne);background:rgba(28,18,48,.7);padding:.8mm 1.2mm;font-size:6.5pt}
+.soc img{width:3.2mm;height:3.2mm}
+.strip .cr{position:relative}.strip .cr img{display:block}.strip .cr small{position:absolute;right:1.5mm;bottom:1mm;font-size:4.6pt;color:rgba(255,255,255,.7);font-style:italic}
 .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}
-.strip img{width:100%;aspect-ratio:2/1;object-fit:cover;object-position:50% 30%;border:1px solid var(--ligne)}
+.strip img{width:100%;aspect-ratio:3/1;object-fit:cover;object-position:50% 40%;border:1px solid var(--ligne)}
 @media screen and (max-width:820px){
   .pages{padding:16px 0 40px;gap:16px}
   .page{width:100%;height:auto;min-height:0}
@@ -109,7 +117,7 @@ p{margin:0}
   .disco{grid-template-columns:repeat(3,1fr)}
   .big{height:220px;flex:none}
   .contact{grid-template-columns:1fr}
-  .strip{grid-template-columns:1fr 1fr}.strip img:last-child{display:none}
+  .strip{grid-template-columns:1fr 1fr}.strip>img:last-child{display:none}
 }
 @page{size:A4;margin:0}
 @media print{
@@ -125,7 +133,7 @@ p{margin:0}
 <div class="bar">
   <a class="dl" href="ChabiFonK-Experience-EPK.pdf" download>Télécharger le PDF</a>
   <a href="../">Site</a>
-  <a href="https://drive.google.com/drive/folders/1jOnhd2685ayFrFoZMkBzQfXmKzmbHx_w" target="_blank" rel="noopener">Pack pro</a>
+  <a href="https://drive.google.com/drive/folders/1jOnhd2685ayFrFoZMkBzQfXmKzmbHx_w" target="_blank" rel="noopener" class="pp">Pack pro ↗</a>
 </div>
 <div class="pages">
 
@@ -134,6 +142,7 @@ p{margin:0}
     <img class="logo" src="../img/logo-blanc.svg" alt="ChabiFönK Experience">
     <div class="tt">
       <p class="epk">Dossier de presse · EPK</p>
+      <p class="epk" style="color:var(--vert);margin-top:1.5mm;text-transform:none;letter-spacing:.04em">#SpaceRock #Psychédélique #Techno #Trance #Dub #Jungle #Krautrock #Fönk #Progressif #Métal</p>
       <p class="tag">Trois alchimistes, quelque part entre les étoiles et le dancefloor, là où les genres se dissolvent à travers un groove cosmique.</p>
     </div>
   </div>
@@ -147,8 +156,9 @@ p{margin:0}
       <p>Sons interstellaires, énergie brute, lâcher prise total ! Êtes-vous prêts pour l'expérience ?</p>
     </div>
     <div>
-      <p>Fondé au début des années 2010 par des musiciens des Deux-Sèvres, venus des scènes punk-métal, funk, reggae et des arts de la rue, ChabiFönK Experience distille une musique hybride au groove « fönky ».</p>
-      <p>Les trois musiciens ont pour point commun le partage, le transfert d'énergie et l'envie d'emmener le public ailleurs. Un vrai groupe de scène, qui rassemble aussi bien les fans de Hendrix que les enfants des rave parties.</p>
+      <p>Voyageant entre sons interstellaires, cosmiques et psychédéliques, ces trois musiciens ont pour dénominateur commun le partage émotionnel, le transfert d’énergie et le lâcher prise !</p>
+      <p>Fondée au début des 2010’s par des artistes du 79 (Melle / Sainte-Soline) issues des scènes punk/métal, funk, reggae et des arts de la rue, ChabiFönK Experience distille une musique hybride unique au groove « fönky », fusion de rock !</p>
+      <p><i>« Des gros riffs à la RATM ou Hendrix et de l’électro-underground des Rave Party »</i></p>
     </div>
   </div>
 
@@ -172,7 +182,7 @@ p{margin:0}
   <div>
     <span class="k">Discographie</span>
     <div class="disco">
-      <figure><a href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="../img/explor3.jpg" alt="EXPLÖR3"></a><b>EXPLÖR3</b><small>2023 · dernier album</small></figure>
+      <figure><a href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="../img/explor3.jpg" alt="EXPLÖR3"></a><b>EXPLÖR3 · dernier album</b><small>2023 · album</small></figure>
       <figure><img src="../img/disco-mission.jpg" alt=""><b>Missiön</b><small>2018 · EP</small></figure>
       <figure><img src="../img/disco-hadra-vol10.jpg" alt=""><b>Hadra Trance Festival Vol. 10</b><small>2017 · compilation</small></figure>
       <figure><img src="../img/disco-mystic-planet-trip.jpg" alt=""><b>Mystic Planet Trip #1</b><small>2015 · EP/LP</small></figure>
@@ -188,11 +198,11 @@ p{margin:0}
 <section class="page"><div class="in">
   <div>
     <span class="k">En live</span>
-    <h2>Le plus parlant, c'est de les voir</h2>
+    <h2 class="q">« Une expérience qui s'affranchit des étiquettes et que l'on vous propose de vivre en live. »</h2>
     <div class="live" style="margin-top:4mm">
-      <a class="vid" href="https://www.youtube.com/watch?v=drLkUm1I-6k&amp;t=1823s" target="_blank" rel="noopener"><img src="../sk-live-mail.jpg" alt="Concert SK-Live"><span class="pl"></span><span class="cap"><span><small>Concert complet · 1h30</small><b>SK-Live</b></span><span class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="segno"><path transform="scale(4)" class="qrline" stroke="#f4f1fa" d="M1 1.5h7m1 0h3m5 0h1m1 0h1m2 0h2m3 0h7m-33 1h1m5 0h1m1 0h2m1 0h2m4 0h1m1 0h1m2 0h1m3 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h4m2 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h2m2 0h1m4 0h4m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h6m2 0h1m1 0h1m1 0h1m3 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m6 0h2m6 0h1m1 0h2m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m5 0h2m1 0h2m-24 1h1m2 0h6m1 0h2m2 0h4m1 0h1m5 0h1m2 0h1m1 0h3m-32 1h1m1 0h1m1 0h1m1 0h4m1 0h1m2 0h1m2 0h2m1 0h1m1 0h1m4 0h4m-31 1h2m3 0h1m2 0h3m2 0h5m1 0h5m1 0h1m1 0h5m-31 1h1m1 0h1m5 0h1m3 0h4m1 0h2m4 0h1m1 0h1m2 0h1m-31 1h1m1 0h1m3 0h2m2 0h1m2 0h6m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-33 1h1m6 0h1m1 0h1m1 0h2m3 0h2m1 0h2m1 0h5m3 0h1m-31 1h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h3m1 0h1m2 0h3m4 0h1m1 0h1m-29 1h2m1 0h3m1 0h3m1 0h1m2 0h2m3 0h2m2 0h3m1 0h1m1 0h2m1 0h1m-33 1h2m1 0h1m1 0h2m1 0h1m1 0h2m2 0h1m3 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m1 0h2m1 0h1m2 0h1m3 0h2m2 0h2m4 0h3m1 0h1m1 0h1m1 0h1m-33 1h1m2 0h2m1 0h1m1 0h2m1 0h3m1 0h2m2 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m-33 1h1m2 0h1m1 0h1m2 0h1m2 0h1m1 0h2m1 0h4m2 0h2m2 0h1m1 0h3m1 0h1m-31 1h2m2 0h1m3 0h1m4 0h1m3 0h2m1 0h1m1 0h2m1 0h1m1 0h1m2 0h1m-33 1h2m1 0h1m3 0h4m2 0h2m1 0h4m3 0h1m3 0h3m-30 1h1m2 0h1m2 0h3m6 0h2m4 0h6m2 0h4m-33 1h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h4m1 0h3m-33 1h2m2 0h1m1 0h1m1 0h3m4 0h1m3 0h2m2 0h7m1 0h2m-25 1h1m1 0h3m2 0h2m4 0h4m3 0h1m1 0h1m-31 1h7m1 0h1m1 0h1m1 0h1m1 0h2m2 0h2m1 0h4m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h5m1 0h1m1 0h1m2 0h2m1 0h3m3 0h3m-31 1h1m1 0h3m1 0h1m1 0h1m2 0h1m3 0h1m1 0h2m4 0h6m2 0h2m-33 1h1m1 0h3m1 0h1m1 0h2m7 0h1m1 0h1m5 0h1m1 0h1m1 0h1m1 0h2m-33 1h1m1 0h3m1 0h1m3 0h2m2 0h1m1 0h1m2 0h3m2 0h1m2 0h2m2 0h2m-33 1h1m5 0h1m2 0h5m1 0h2m3 0h1m1 0h2m3 0h6m-33 1h7m1 0h2m2 0h2m2 0h2m1 0h1m4 0h1m2 0h4"/></svg>
+      <a class="vid" href="https://www.youtube.com/watch?v=drLkUm1I-6k&amp;t=1879s" target="_blank" rel="noopener"><img src="../img/vid-sk.jpg" alt="Concert SK-Live"><span class="cap"><span><small>Concert complet · 1h30</small><b>SK-Live</b></span><span class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="segno"><path transform="scale(4)" class="qrline" stroke="#f4f1fa" d="M1 1.5h7m2 0h3m1 0h1m1 0h5m2 0h2m2 0h7m-33 1h1m5 0h1m2 0h2m2 0h4m1 0h1m1 0h2m1 0h2m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h3m2 0h1m1 0h2m2 0h3m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h2m2 0h2m1 0h4m4 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h1m2 0h1m2 0h7m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h5m2 0h6m1 0h1m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-24 1h3m2 0h5m2 0h1m2 0h1m-25 1h1m2 0h1m1 0h2m1 0h3m2 0h2m1 0h1m4 0h1m1 0h1m1 0h1m1 0h1m-26 1h1m1 0h1m6 0h1m1 0h2m1 0h2m2 0h1m1 0h1m1 0h4m4 0h1m-33 1h1m1 0h6m1 0h1m3 0h2m1 0h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h1m-32 1h1m1 0h1m1 0h1m1 0h3m1 0h3m4 0h1m2 0h4m1 0h1m1 0h2m1 0h2m-31 1h2m1 0h2m2 0h4m1 0h1m1 0h1m1 0h10m1 0h1m1 0h2m-32 1h4m7 0h4m2 0h1m2 0h1m5 0h3m1 0h2m-33 1h7m1 0h2m2 0h1m1 0h4m2 0h1m2 0h1m1 0h5m1 0h1m-29 1h1m3 0h2m1 0h1m2 0h1m2 0h3m2 0h2m3 0h1m1 0h1m2 0h1m-32 1h1m1 0h1m3 0h1m1 0h4m1 0h3m1 0h8m1 0h1m1 0h1m1 0h2m-32 1h2m1 0h1m4 0h2m1 0h2m3 0h2m2 0h4m3 0h1m1 0h1m1 0h1m-31 1h1m2 0h1m1 0h4m2 0h3m1 0h2m4 0h1m7 0h3m-31 1h1m2 0h1m1 0h1m2 0h1m1 0h1m2 0h1m4 0h2m2 0h2m1 0h1m3 0h1m-32 1h1m1 0h2m2 0h2m1 0h1m1 0h2m1 0h1m2 0h1m2 0h5m6 0h2m-31 1h1m1 0h2m1 0h2m2 0h1m3 0h1m4 0h3m1 0h3m3 0h3m-33 1h2m3 0h2m2 0h1m3 0h1m2 0h2m1 0h1m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m-32 1h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h2m2 0h4m1 0h2m4 0h1m-30 1h1m2 0h6m1 0h2m1 0h1m3 0h1m1 0h3m2 0h5m3 0h1m-25 1h1m5 0h1m2 0h4m3 0h1m3 0h2m1 0h2m-33 1h7m2 0h1m1 0h2m4 0h2m3 0h1m1 0h1m1 0h1m1 0h3m-31 1h1m5 0h1m1 0h3m2 0h1m1 0h1m1 0h2m2 0h1m2 0h1m3 0h1m2 0h2m-33 1h1m1 0h3m1 0h1m6 0h2m3 0h2m1 0h1m2 0h6m2 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m4 0h1m1 0h2m1 0h1m1 0h5m1 0h1m1 0h1m1 0h1m-31 1h1m1 0h3m1 0h1m2 0h9m5 0h3m2 0h2m2 0h1m-33 1h1m5 0h1m4 0h2m1 0h1m2 0h5m2 0h3m-27 1h7m1 0h1m3 0h1m2 0h2m4 0h1m1 0h3m2 0h1m1 0h2"/></svg>
 </span></span></a>
-      <a class="vid" href="https://www.youtube.com/watch?v=KJpsWZ2k3XY" target="_blank" rel="noopener"><img src="../img/photo4.jpg" alt="Teaser live"><span class="pl"></span><span class="cap"><span><small>2 min</small><b>Teaser live</b></span><span class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="segno"><path transform="scale(4)" class="qrline" stroke="#f4f1fa" d="M1 1.5h7m2 0h1m1 0h1m5 0h5m1 0h1m2 0h7m-33 1h1m5 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h4m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m8 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m7 0h3m4 0h3m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h4m1 0h1m3 0h5m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m2 0h2m2 0h1m3 0h3m1 0h1m2 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-24 1h6m1 0h3m1 0h1m1 0h1m-22 1h3m1 0h2m5 0h1m1 0h6m1 0h1m2 0h1m5 0h2m-32 1h2m2 0h1m3 0h1m5 0h1m3 0h3m1 0h2m2 0h2m1 0h2m1 0h1m-32 1h1m2 0h6m1 0h1m3 0h1m1 0h1m2 0h2m1 0h1m1 0h5m1 0h2m-33 1h2m1 0h3m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h6m1 0h1m2 0h1m-33 1h1m1 0h1m1 0h3m1 0h2m1 0h1m1 0h2m3 0h2m3 0h1m4 0h2m1 0h1m-31 1h1m1 0h2m3 0h1m1 0h3m3 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m-31 1h1m3 0h2m1 0h1m2 0h2m2 0h1m2 0h3m5 0h2m1 0h1m-28 1h1m1 0h1m6 0h1m4 0h1m1 0h1m2 0h2m1 0h3m1 0h3m-30 1h1m4 0h1m2 0h1m1 0h1m1 0h3m2 0h6m1 0h2m1 0h1m1 0h1m-27 1h2m3 0h2m2 0h1m1 0h1m7 0h1m2 0h1m1 0h2m2 0h1m-32 1h4m1 0h2m4 0h6m2 0h1m4 0h4m1 0h2m-31 1h1m1 0h3m4 0h3m1 0h2m1 0h1m6 0h3m1 0h1m2 0h1m-31 1h8m1 0h2m2 0h4m1 0h3m2 0h1m2 0h1m1 0h2m1 0h1m-33 1h2m3 0h1m1 0h1m3 0h3m1 0h1m4 0h2m1 0h1m3 0h1m1 0h2m1 0h1m-30 1h1m2 0h1m1 0h3m2 0h4m3 0h1m1 0h2m1 0h2m2 0h1m1 0h2m-32 1h1m2 0h1m2 0h1m1 0h2m2 0h1m1 0h1m1 0h3m2 0h2m2 0h1m2 0h1m2 0h1m-33 1h1m2 0h1m1 0h2m5 0h1m2 0h2m1 0h2m2 0h7m3 0h1m-25 1h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h1m3 0h2m-30 1h7m2 0h1m2 0h3m4 0h1m1 0h4m1 0h1m1 0h1m2 0h1m-32 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h3m2 0h1m1 0h4m3 0h4m-32 1h1m1 0h3m1 0h1m2 0h6m1 0h3m2 0h1m1 0h6m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h3m2 0h2m3 0h3m2 0h2m2 0h1m3 0h2m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h4m5 0h8m1 0h1m-30 1h1m5 0h1m1 0h6m1 0h3m1 0h2m1 0h2m3 0h2m3 0h1m-33 1h7m3 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1"/></svg>
+      <a class="vid" href="https://www.youtube.com/watch?v=KJpsWZ2k3XY" target="_blank" rel="noopener"><img src="../img/vid-teaser.jpg" alt="Teaser live"><span class="cap"><span><small>2 min</small><b>Teaser live</b></span><span class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="segno"><path transform="scale(4)" class="qrline" stroke="#f4f1fa" d="M1 1.5h7m2 0h1m1 0h1m5 0h5m1 0h1m2 0h7m-33 1h1m5 0h1m1 0h2m1 0h1m2 0h1m1 0h1m1 0h1m2 0h4m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m8 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m7 0h3m4 0h3m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h4m1 0h1m3 0h5m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m2 0h2m2 0h1m3 0h3m1 0h1m2 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-24 1h6m1 0h3m1 0h1m1 0h1m-22 1h3m1 0h2m5 0h1m1 0h6m1 0h1m2 0h1m5 0h2m-32 1h2m2 0h1m3 0h1m5 0h1m3 0h3m1 0h2m2 0h2m1 0h2m1 0h1m-32 1h1m2 0h6m1 0h1m3 0h1m1 0h1m2 0h2m1 0h1m1 0h5m1 0h2m-33 1h2m1 0h3m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h6m1 0h1m2 0h1m-33 1h1m1 0h1m1 0h3m1 0h2m1 0h1m1 0h2m3 0h2m3 0h1m4 0h2m1 0h1m-31 1h1m1 0h2m3 0h1m1 0h3m3 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m-31 1h1m3 0h2m1 0h1m2 0h2m2 0h1m2 0h3m5 0h2m1 0h1m-28 1h1m1 0h1m6 0h1m4 0h1m1 0h1m2 0h2m1 0h3m1 0h3m-30 1h1m4 0h1m2 0h1m1 0h1m1 0h3m2 0h6m1 0h2m1 0h1m1 0h1m-27 1h2m3 0h2m2 0h1m1 0h1m7 0h1m2 0h1m1 0h2m2 0h1m-32 1h4m1 0h2m4 0h6m2 0h1m4 0h4m1 0h2m-31 1h1m1 0h3m4 0h3m1 0h2m1 0h1m6 0h3m1 0h1m2 0h1m-31 1h8m1 0h2m2 0h4m1 0h3m2 0h1m2 0h1m1 0h2m1 0h1m-33 1h2m3 0h1m1 0h1m3 0h3m1 0h1m4 0h2m1 0h1m3 0h1m1 0h2m1 0h1m-30 1h1m2 0h1m1 0h3m2 0h4m3 0h1m1 0h2m1 0h2m2 0h1m1 0h2m-32 1h1m2 0h1m2 0h1m1 0h2m2 0h1m1 0h1m1 0h3m2 0h2m2 0h1m2 0h1m2 0h1m-33 1h1m2 0h1m1 0h2m5 0h1m2 0h2m1 0h2m2 0h7m3 0h1m-25 1h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h1m3 0h2m-30 1h7m2 0h1m2 0h3m4 0h1m1 0h4m1 0h1m1 0h1m2 0h1m-32 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h3m2 0h1m1 0h4m3 0h4m-32 1h1m1 0h3m1 0h1m2 0h6m1 0h3m2 0h1m1 0h6m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h3m2 0h2m3 0h3m2 0h2m2 0h1m3 0h2m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h4m5 0h8m1 0h1m-30 1h1m5 0h1m1 0h6m1 0h3m1 0h2m1 0h2m3 0h2m3 0h1m-33 1h7m3 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1"/></svg>
 </span></span></a>
     </div>
   </div>
@@ -224,12 +234,12 @@ p{margin:0}
         <li>Accueil technique à prévoir (matériel et techniciens)</li>
         <li>Clé en main possible jusqu'à 200 personnes</li>
         <li>Batterie électronique possible dans les petits lieux</li>
-        <li>Fiche technique, rider, kit com, liste SACEM dans le <a href="https://drive.google.com/drive/folders/1jOnhd2685ayFrFoZMkBzQfXmKzmbHx_w" target="_blank" rel="noopener" style="text-decoration:underline">pack pro</a></li>
       </ul>
+      <a class="pk" href="https://drive.google.com/drive/folders/1jOnhd2685ayFrFoZMkBzQfXmKzmbHx_w" target="_blank" rel="noopener"><b>Pack pro ↗</b><span>Fiche technique · rider · kit com · liste SACEM</span></a>
     </div>
   </div>
 
-  <div class="strip"><img src="../img/photo3.jpg" alt=""><img src="../img/photo6.jpg" alt=""><img src="../img/photo2.jpg" alt=""></div>
+  <div class="strip"><div class="cr"><img src="../img/photo3.jpg" alt=""><small>© Sylvia Vasseur</small></div><img src="../img/photo6.jpg" alt=""><img src="../img/photo2.jpg" alt="" style="object-position:50% 12%"></div>
 
   <div class="contact">
     <div>
@@ -248,6 +258,8 @@ p{margin:0}
       </div>
     </div>
     <div class="qrs">
+      <div class="g"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 156" class="segno"><path transform="scale(4)" class="qrline" stroke="#7dff2f" d="M1 1.5h7m1 0h2m1 0h2m2 0h1m2 0h2m2 0h1m3 0h2m2 0h7m-37 1h1m5 0h1m1 0h1m1 0h1m4 0h1m4 0h3m5 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h4m3 0h1m1 0h2m3 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h1m1 0h1m1 0h3m1 0h3m1 0h2m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m4 0h2m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m3 0h1m4 0h1m1 0h2m1 0h4m1 0h1m4 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-26 1h2m1 0h2m9 0h4m-29 1h1m2 0h10m1 0h3m1 0h1m1 0h2m1 0h2m1 0h4m2 0h1m1 0h3m-35 1h1m2 0h1m1 0h1m3 0h1m8 0h1m1 0h2m1 0h1m1 0h1m2 0h6m-36 1h1m1 0h2m1 0h2m3 0h1m1 0h1m4 0h1m3 0h5m1 0h2m1 0h4m2 0h1m-36 1h1m2 0h1m2 0h3m2 0h1m1 0h2m1 0h2m3 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h3m-37 1h2m1 0h1m2 0h1m4 0h2m3 0h1m2 0h2m3 0h1m3 0h1m1 0h2m4 0h1m-35 1h3m3 0h3m3 0h1m1 0h3m2 0h3m2 0h4m2 0h2m-32 1h1m2 0h2m1 0h3m2 0h5m1 0h1m1 0h2m4 0h4m1 0h5m-37 1h1m1 0h2m1 0h1m2 0h1m1 0h1m2 0h1m1 0h5m2 0h2m2 0h2m3 0h1m1 0h2m1 0h1m-36 1h3m1 0h2m1 0h1m3 0h1m1 0h1m1 0h2m2 0h1m1 0h1m7 0h2m2 0h2m-35 1h5m4 0h3m3 0h3m1 0h1m5 0h1m4 0h1m2 0h1m-35 1h1m1 0h3m1 0h2m6 0h2m1 0h1m2 0h1m1 0h2m3 0h4m1 0h2m2 0h1m-37 1h1m3 0h2m1 0h1m4 0h2m9 0h3m1 0h1m3 0h2m3 0h1m-37 1h3m1 0h1m1 0h2m3 0h1m3 0h3m5 0h2m1 0h1m1 0h5m-32 1h2m1 0h2m5 0h2m2 0h1m3 0h1m1 0h3m2 0h3m3 0h1m1 0h1m-35 1h4m1 0h8m2 0h4m2 0h1m1 0h1m2 0h6m1 0h1m2 0h1m-37 1h1m2 0h1m8 0h1m3 0h2m1 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h5m-36 1h7m2 0h1m1 0h2m2 0h4m1 0h2m1 0h2m2 0h1m2 0h2m-32 1h4m3 0h4m2 0h1m2 0h1m2 0h4m3 0h1m1 0h1m1 0h1m1 0h2m-34 1h4m1 0h2m1 0h1m2 0h1m1 0h1m2 0h4m1 0h2m2 0h3m5 0h1m1 0h2m-37 1h1m1 0h4m1 0h1m1 0h1m1 0h1m1 0h3m2 0h1m1 0h1m5 0h2m1 0h4m1 0h1m1 0h1m-37 1h1m2 0h1m2 0h1m1 0h2m1 0h4m1 0h1m3 0h1m1 0h1m1 0h2m2 0h5m1 0h2m-28 1h1m1 0h1m4 0h2m2 0h1m1 0h1m6 0h1m3 0h1m1 0h2m-36 1h7m1 0h1m1 0h2m1 0h1m1 0h1m3 0h1m3 0h2m3 0h1m1 0h1m1 0h1m3 0h1m-37 1h1m5 0h1m1 0h2m1 0h1m2 0h6m2 0h2m1 0h4m3 0h1m2 0h1m-36 1h1m1 0h3m1 0h1m1 0h3m2 0h2m4 0h1m3 0h10m2 0h1m-36 1h1m1 0h3m1 0h1m1 0h1m1 0h2m4 0h1m1 0h1m1 0h1m2 0h1m5 0h2m5 0h1m-37 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h3m1 0h1m3 0h3m7 0h2m2 0h1m-37 1h1m5 0h1m3 0h2m2 0h1m1 0h2m1 0h2m1 0h3m1 0h1m3 0h1m1 0h1m1 0h3m-37 1h7m1 0h2m2 0h1m2 0h2m1 0h3m3 0h1m1 0h1m1 0h2m1 0h1m4 0h1"/></svg>
+Pack pro</div>
       <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" class="segno"><path transform="scale(4)" class="qrline" stroke="#f4f1fa" d="M1 1.5h7m2 0h3m2 0h2m2 0h7m-25 1h1m5 0h1m3 0h1m2 0h3m2 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m2 0h2m1 0h1m3 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m2 0h2m3 0h3m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m1 0h2m2 0h1m2 0h1m2 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-14 1h2m1 0h1m1 0h1m-17 1h1m2 0h1m1 0h2m1 0h2m3 0h2m1 0h2m1 0h1m-20 1h1m1 0h2m3 0h4m1 0h1m3 0h1m1 0h1m5 0h1m-25 1h2m1 0h4m2 0h2m5 0h3m4 0h2m-25 1h1m1 0h4m1 0h1m2 0h6m1 0h2m1 0h1m-21 1h2m1 0h1m2 0h3m2 0h3m2 0h4m1 0h1m1 0h2m-23 1h1m1 0h1m3 0h2m1 0h3m4 0h2m1 0h2m1 0h1m-25 1h1m2 0h6m3 0h2m2 0h1m1 0h3m1 0h1m1 0h1m-24 1h1m1 0h3m2 0h2m2 0h4m2 0h1m1 0h1m2 0h1m-24 1h3m2 0h3m1 0h1m1 0h2m1 0h9m-15 1h2m4 0h3m3 0h2m2 0h1m-25 1h7m2 0h2m1 0h2m1 0h2m1 0h1m1 0h2m1 0h2m-25 1h1m5 0h1m1 0h1m1 0h2m4 0h1m3 0h4m-24 1h1m1 0h3m1 0h1m2 0h6m1 0h6m1 0h1m-24 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m2 0h2m1 0h4m-23 1h1m1 0h3m1 0h1m2 0h1m2 0h1m6 0h2m1 0h1m1 0h1m-25 1h1m5 0h1m2 0h3m1 0h6m2 0h1m-22 1h7m1 0h1m4 0h1m1 0h2m2 0h1m3 0h2"/></svg>
 Site</div>
     </div>
