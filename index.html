@@ -175,7 +175,12 @@ a.row:hover .l{text-decoration:underline;text-underline-offset:4px}
 .tracks{columns:2;column-gap:28px;font-family:var(--mono);font-size:13.5px;margin:18px 0 26px;padding:0;list-style:none;counter-reset:t}
 .tracks li{padding:6px 0;border-bottom:1px solid var(--ligne);break-inside:avoid;counter-increment:t}
 .tracks li::before{content:counter(t,decimal-leading-zero);color:var(--gris);margin-right:10px}
-.plats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.albmore{max-width:860px;margin:50px auto 0;text-align:center}
+.albmore .credits{text-align:center}
+.albmore .plats{margin-top:22px}
+.plats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+@media (max-width:900px){.plats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.plats{grid-template-columns:repeat(2,minmax(0,1fr))}.gal button{width:calc((100% - 12px)/2)}}
 .plats a{border:1px solid var(--ligne);padding:12px 10px;display:flex;align-items:center;justify-content:center;gap:9px;font-family:var(--mono);font-size:12px;white-space:nowrap;min-width:0;background:var(--voile);transition:border-color .2s}
 .plats a:hover{border-color:var(--blanc)}
 .plats img{width:20px;height:20px}
@@ -204,7 +209,7 @@ a.row:hover .l{text-decoration:underline;text-underline-offset:4px}
 
 /* vidéos et photos */
 .vids{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:960px;margin:0 auto}
-.vid{position:relative;aspect-ratio:16/9;border:1px solid var(--ligne);background:#000 center/cover;display:flex;align-items:flex-end;padding:14px;overflow:hidden;cursor:pointer}
+.vid{position:relative;aspect-ratio:16/9;background:#000 center/cover;display:flex;align-items:flex-end;padding:14px;overflow:hidden;cursor:pointer}
 .vid::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,6,18,.9),transparent 60%);transition:opacity .3s}
 .vid:hover::before{opacity:.7}
 .vid.big{grid-column:1/-1}
@@ -219,9 +224,9 @@ a.row:hover .l{text-decoration:underline;text-underline-offset:4px}
 .chanw{text-align:center;margin:30px 0 56px}
 .chan img{width:20px;height:20px;transition:filter .2s}
 .chan:hover img{filter:invert(1)}
-.gal{columns:3;column-gap:12px;margin-top:70px}
-.gal button{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:100%;margin:0 0 12px;break-inside:avoid}
-.gal img{width:100%;height:auto;transition:filter .3s}
+.gal{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:70px}
+.gal button{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:calc((100% - 24px)/3);aspect-ratio:3/2;overflow:hidden}
+.gal img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:filter .3s}
 .gal button:hover img{filter:brightness(1.12)}
 .lb{position:fixed;inset:0;z-index:50;background:rgba(5,3,10,.94);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) 16px max(16px,env(safe-area-inset-bottom,0px))}
 .lb[hidden]{display:none}
@@ -309,7 +314,7 @@ footer .plat a,footer .plat img{width:30px;height:30px}
   .disco h3{margin-top:0}
   .merch{grid-template-columns:minmax(0,360px);gap:44px}
   .vids{grid-template-columns:1fr}
-  .gal{columns:2;column-gap:8px;margin-top:50px}.gal button{margin-bottom:8px}
+  .gal{gap:8px;margin-top:50px}.gal button{width:calc((100% - 8px)/2)}
   .lists{grid-template-columns:1fr;gap:36px}
   .booking{padding:64px 0}
   .bk{grid-template-columns:1fr;gap:28px}
@@ -453,7 +458,10 @@ footer .plat a,footer .plat img{width:30px;height:30px}
       <p class="muted" data-t="alb3">Sorti le 2 novembre 2023 en CD, vinyle et streaming. Enregistré et mixé au Studio de l'Arnoult par Alexis Lacaze, masterisé au Studio Storm Mastering par Clément Bastiat. Artwork : SandFlake.</p>
       </div>
       <ol class="tracks"><li>Intro</li><li>Antares</li><li>Crunchy Milky Way</li><li>Sweet Star</li><li>Sideral Silence</li><li>Polarity</li><li>Pandora Project</li><li>Trans X Store</li></ol>
-      <details class="credits"><summary data-t="cred">Crédits</summary><div data-t="credt">Composé et arrangé par ChabiFönK Experience.<br><b>David Legeron</b> « Vox Augusti » : guitares, fx et MAO · <b>Mathieu Rivaud</b> « Batmat » : cymbales, batterie et pitreries · <b>Yael Charton</b> « Daddy Bass » : basse, clavier, fx et MAO · <b>Valentin Girard</b> : management et production.<br>Arrangements additionnels : Frédéric Bonnelais « Bones » sur « Crunchy Milky Way » et « Pandora Project ». Enregistré et mixé au Studio de l'Arnoult par Alexis Lacaze « Alec ». Masterisé au Studio Storm Mastering par Clément Bastiat. Artwork : SandFlake.<br>2023 ⓒ ChabiFönK Experience ⓟ Raska</div></details>
+    </div>
+  </div>
+  <div class="albmore">
+      <details class="credits" open><summary data-t="cred">Crédits</summary><div data-t="credt">Composé et arrangé par ChabiFönK Experience.<br><b>David Legeron</b> « Vox Augusti » : guitares, fx et MAO · <b>Mathieu Rivaud</b> « Batmat » : cymbales, batterie et pitreries · <b>Yael Charton</b> « Daddy Bass » : basse, clavier, fx et MAO · <b>Valentin Girard</b> : management et production.<br>Arrangements additionnels : Frédéric Bonnelais « Bones » sur « Crunchy Milky Way » et « Pandora Project ». Enregistré et mixé au Studio de l'Arnoult par Alexis Lacaze « Alec ». Masterisé au Studio Storm Mastering par Clément Bastiat. Artwork : SandFlake.<br>2023 ⓒ ChabiFönK Experience ⓟ Raska</div></details>
       <div class="plats">
         <a class="main" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener" data-t="listen">▶ Écouter EXPLÖR3</a>
         <a href="https://open.spotify.com/artist/22BU8CP8IdsHC6xqOZCYul" target="_blank" rel="noopener"><img src="img/ico/spotify.png" alt="">Spotify</a>
@@ -464,7 +472,6 @@ footer .plat a,footer .plat img{width:30px;height:30px}
         <a href="https://www.instagram.com/chabifonkexperience/" target="_blank" rel="noopener"><img src="img/ico/instagram.png" alt="">Instagram</a>
         <a class="buy" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buyalb">Acheter le CD ou le vinyle sur Bandcamp ↗</a>
       </div>
-    </div>
   </div>
   <h3 class="disco-h" data-t="disco">Discographie</h3>
   <ul class="disco">
@@ -571,6 +578,7 @@ document.querySelectorAll('.copy').forEach(b=>b.onclick=async()=>{const t=b.text
 
 // vidéos : sur le vrai site, le lecteur YouTube se charge dans la page au clic
 const canEmbed=/(^|\.)chabifonk\.fr$|github\.io$|^localhost$/.test(location.hostname);
+document.querySelectorAll('.vid[data-yt]').forEach(v=>{const id=v.dataset.yt;const im=new Image();im.onload=()=>{const u=im.naturalWidth>200?im.src:'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg';v.style.backgroundImage='url('+u+')'};im.src='https://i.ytimg.com/vi/'+id+'/maxresdefault.jpg'});
 document.querySelectorAll('.vid').forEach(v=>v.addEventListener('click',e=>{if(!canEmbed)return;e.preventDefault();if(v.querySelector('iframe'))return;
   const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1${v.dataset.start?'&start='+v.dataset.start:''}`;f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=v.textContent.trim();v.appendChild(f)}));
 
