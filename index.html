@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ChabiFönK Experience · power trio cosmique · rock psyché, trance, dub</title>
+<meta name="description" content="ChabiFönK Experience (Chabifonk) : power trio instrumental cosmique depuis 2011. Rock psychédélique-progressif, dub, techno et trance en live. Dates de tournée, albums, vidéos, booking.">
+<meta name="keywords" content="ChabiFönK Experience, Chabifonk, Chabifonk Experience, Chabi Fonk, Chabifunk, ChabiFunk Experience, Shabifonk, Shabi Fonk, Shabifunk, CFK, power trio, rock psychédélique, psytrance, dub, techno, groupe live, Deux-Sèvres">
+<meta name="author" content="ChabiFönK Experience">
+<meta name="theme-color" content="#0A0612">
+<link rel="canonical" href="https://www.chabifonk.fr/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ChabiFönK Experience">
+<meta property="og:title" content="ChabiFönK Experience · power trio cosmique">
+<meta property="og:description" content="Trois alchimistes, quelque part entre les étoiles et le dancefloor.">
+<meta property="og:url" content="https://www.chabifonk.fr/">
+<meta property="og:image" content="https://www.chabifonk.fr/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR"><meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MusicGroup","name":"ChabiFönK Experience",
+"alternateName":["Chabifonk Experience","Chabifonk","ChabiFonK","ChabiFönK","Chabi Fonk","Chabi Fonk Experience","Chabifunk","ChabiFunk Experience","Chabi Funk","Shabifonk","Shabi Fonk","Shabifunk","Shabi Funk","CFK"],
+"description":"Power trio instrumental cosmique : rock psychédélique-progressif et musiques électroniques des sound systems (dub, techno, trance).",
+"url":"https://www.chabifonk.fr/","logo":"https://www.chabifonk.fr/icon-512.png","image":"https://www.chabifonk.fr/img/og.jpg","foundingDate":"2011",
+"genre":["Rock psychédélique","Rock progressif","Psytrance","Dub","Techno","Space rock"],
+"member":[{"@type":"Person","name":"Yael Charton","roleName":"Clavier, basse"},{"@type":"Person","name":"David Legeron","alternateName":"Vox Augusti","roleName":"Guitare, effets"},{"@type":"Person","name":"Mathieu Rivaud","roleName":"Batterie, sampler"}],
+"album":[{"@type":"MusicAlbum","name":"EXPLÖR3","datePublished":"2023-11-02"},{"@type":"MusicAlbum","name":"Missiön","datePublished":"2018"},{"@type":"MusicAlbum","name":"Mystic Planet Trip #1","datePublished":"2015"},{"@type":"MusicAlbum","name":"Live au Café du Boulevard","datePublished":"2014"}],
+"sameAs":["https://www.facebook.com/chabifonkexperience","https://www.instagram.com/chabifonkexperience/","https://www.youtube.com/@chabifonkexperience","https://open.spotify.com/artist/22BU8CP8IdsHC6xqOZCYul","https://chabifonkexperience.bandcamp.com","https://soundcloud.com/chabifonkexperience","https://www.deezer.com/fr/artist/13590613","https://linktr.ee/chabifonk"],
+"event":[{"@type":"MusicEvent","name":"ChabiFönK Experience · Friends Connection","startDate":"2026-11-21","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","url":"https://www.amac16.com/evenement/friends-connection-on-remonte-le-temps/","location":{"@type":"Place","name":"Ferme Saint-Michel","address":{"@type":"PostalAddress","addressLocality":"Confolens","postalCode":"16500","addressCountry":"FR"}},"performer":{"@type":"MusicGroup","name":"ChabiFönK Experience"}}]}
+</script>
+<style>
+/* Accueil immersif (sphère + triangle) puis contenu net façon « journal de bord ». Un seul univers sombre, assumé : violet nuit étoilé de la DA 2026. */
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Manrope";src:url(fonts/manrope-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Space Mono";src:url(fonts/space-mono-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Space Mono";src:url(fonts/space-mono-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{
+  --nuit:#0A0612; --violet:#8F3DFF; --orange:#FF6A00; --vert:#7DFF2F;
+  --blanc:#F4F1FA; --gris:#B2AAC4; --ligne:rgba(244,241,250,.14); --voile:rgba(10,6,18,.55);
+  --texte:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"Space Mono", ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--nuit) url(img/fond-paysage.jpg) center top/cover fixed;color:var(--blanc);font-family:var(--texte);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;background:linear-gradient(180deg,rgba(10,6,18,.3),rgba(10,6,18,.7));pointer-events:none;z-index:0}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--vert);outline-offset:3px}
+main,header,footer,.booking{position:relative;z-index:1}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:821px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+.x{color:var(--vert)}
+
+#sky{position:fixed;inset:0;z-index:0;pointer-events:none}
+.shoot{position:fixed;z-index:0;top:0;left:0;height:2px;border-radius:2px;pointer-events:none;opacity:0}
+
+/* barre du haut, toujours visible, avec les plateformes */
+body::after{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(10,6,18,.92);z-index:30}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(10,6,18,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--ligne)}
+.top .wrap{display:flex;align-items:center;gap:22px;height:64px}
+.top .tri{width:34px;flex:none}
+.top .nav{display:flex;gap:18px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.top .nav a{color:var(--gris);transition:color .2s}.top .nav a:hover{color:var(--blanc)}
+.plat{display:flex;gap:10px;margin-left:auto;align-items:center}
+.plat a{display:block;width:26px;height:26px;opacity:.85;transition:opacity .2s,transform .2s}
+.plat a:hover{opacity:1;transform:translateY(-2px)}
+.plat img{width:26px;height:26px}
+.lang{background:none;border:1px solid var(--ligne);color:var(--gris);font-family:var(--mono);font-size:12px;letter-spacing:.1em;padding:6px 9px;cursor:pointer}
+.lang b{color:var(--blanc);font-weight:700}
+.burger{display:none;background:none;border:1px solid var(--ligne);color:var(--blanc);width:40px;height:40px;font-size:18px;cursor:pointer;flex:none}
+.top .menu{display:none}
+.menu .lang{display:none}
+
+/* accueil */
+.hero{min-height:calc(100svh - 64px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px 16px 60px;position:relative}
+ .orb{margin:0 auto;width:min(340px,64vw);aspect-ratio:1;position:relative;animation:float 9s ease-in-out infinite}
+.orb::before{content:"";position:absolute;inset:-28%;border-radius:50%;background:radial-gradient(circle,rgba(143,61,255,.55),rgba(255,106,0,.12) 45%,transparent 68%);animation:pulse 6s ease-in-out infinite}
+.orb img{position:relative;width:100%;height:100%;scale:var(--os,1);transition:translate .6s ease-out,scale .25s linear;filter:drop-shadow(0 0 30px rgba(143,61,255,.55));transition:translate .6s ease-out}
+.hero h1{margin:0;line-height:0;position:relative}
+.hlogo .lg{display:block;height:auto;width:min(380px,72vw,46svh);scale:var(--ls,1);transform-origin:50% 60%;animation:logoin 1.4s ease-out both,lfloat 8s ease-in-out 1.4s infinite,lglow 6s ease-in-out 1.4s infinite}
+.hlogo::before{content:"";position:absolute;inset:-30% -20%;background:radial-gradient(closest-side,rgba(143,61,255,.45),rgba(255,106,0,.1) 60%,transparent);animation:pulse 6s ease-in-out infinite;z-index:-1;pointer-events:none}
+.tag{font-size:clamp(17px,2vw,20px);opacity:.92;max-width:34ch;margin:26px auto 24px;line-height:1.45}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border:1px solid var(--blanc);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:background .2s,color .2s}
+.btn:hover,.btn.plein{background:var(--blanc);color:var(--nuit)}
+.btn.plein:hover{background:#fff}
+.next{margin-top:26px;display:flex;justify-content:center}
+.next a{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);border:1px solid var(--ligne);padding:8px 12px;background:var(--voile);text-align:center;transition:color .2s,border-color .2s}
+.next a:hover{color:var(--blanc);border-color:var(--vert)}
+.next i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--vert);box-shadow:0 0 10px var(--vert);margin-right:8px;animation:blink 2s infinite;vertical-align:1px}
+
+/* l'expérience */
+.exp{padding:40px 0 90px;text-align:center;overflow-x:clip}
+.hero{overflow-x:clip}
+.portal{width:min(410px,74vw);aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;position:relative;box-shadow:0 0 0 1px rgba(255,255,255,.18),0 0 90px rgba(143,61,255,.5),0 0 200px rgba(255,106,0,.12)}
+.portal img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(var(--z,1.12))}
+.k{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--vert)}
+.exp .k{display:block;margin-top:44px}
+.lead2{font-size:clamp(19px,2.3vw,26px);line-height:1.35;font-weight:600;margin:14px auto 18px;max-width:46ch;text-wrap:balance}
+.exp .small strong{font-weight:600;color:var(--blanc)}
+.exp .small{max-width:58ch;margin:0 auto;font-size:clamp(16px,1.8vw,18px);opacity:.88}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:center;gap:22px 64px;margin-top:60px}
+.stats strong{display:block;font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1;font-variant-numeric:tabular-nums}
+.stats span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gris)}
+
+/* sections */
+section.s{padding:96px 0;border-top:1px solid var(--ligne);background:var(--voile)}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;margin-bottom:38px}
+.sec-h .n,.bk .k{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--vert);display:inline-flex;align-items:center;gap:10px}
+.sec-h .n::before,.bk .k::before{content:"";width:13px;height:13px;flex:none;background:var(--vert);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);filter:drop-shadow(0 0 6px var(--vert));animation:twk 3.2s ease-in-out infinite}
+.sec-h:nth-of-type(n) .n::before{animation-delay:var(--td,0s)}
+@keyframes twk{0%,100%{opacity:1;transform:scale(1) rotate(0)}45%{opacity:.35;transform:scale(.6) rotate(45deg)}55%{opacity:.5;transform:scale(.7) rotate(45deg)}}
+h2{font-weight:800;font-size:clamp(24px,3.2vw,34px);letter-spacing:.05em;text-transform:uppercase;margin:0;line-height:1.05;text-wrap:balance}
+h2 .pre{color:var(--gris);font-weight:600}
+h3{margin:0}
+.lede{font-size:clamp(17px,1.6vw,19px);max-width:60ch;margin:0 0 18px;line-height:1.5}
+.muted{color:var(--gris)}
+
+/* trio */
+.trio{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:center}
+.trio img{width:100%;height:auto}
+.trio p{margin:0 0 16px;opacity:.9;max-width:62ch}
+.quote{text-align:center;margin:56px auto 0;font-size:clamp(17px,1.9vw,21px);font-weight:600;font-style:italic;text-wrap:balance;opacity:1!important}
+.quote+.crew{margin-top:26px}
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.crew article{border:1px solid var(--ligne);background:var(--voile);overflow:hidden}
+.crew img{width:100%;aspect-ratio:1;object-fit:cover}
+.crew div{padding:16px 18px}
+.crew .r{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--vert)}
+.crew h3{margin-top:6px;font-size:20px}
+.crew h3 .muted{white-space:nowrap}
+.infl{margin-top:48px}
+.infl h3{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--vert);font-weight:400;margin-bottom:16px}
+.tags.big li{font-size:clamp(16px,1.8vw,19px);font-weight:600;padding:9px 15px;border-color:rgba(143,61,255,.45);background:rgba(143,61,255,.12)}
+
+/* tour */
+.log{border-top:1px solid var(--ligne)}
+.row{display:grid;grid-template-columns:100px minmax(0,1fr) 250px 190px;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--ligne)}
+.row .d{font-family:var(--mono);font-size:18px;font-weight:700;font-variant-numeric:tabular-nums}
+.row .l{font-weight:600;font-size:18px}
+.row .v{color:var(--gris)}
+.st{justify-self:end;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:5px 9px;border:1px solid var(--ligne);color:var(--gris);white-space:nowrap}
+.row.passe{opacity:.5}
+.row.go{background:linear-gradient(90deg,rgba(125,255,47,.09),transparent 65%)}
+.row.go .st{border-color:var(--vert);color:var(--vert)}
+.row.go .d{color:var(--vert)}
+a.row{transition:background .2s}
+a.row:hover{background:linear-gradient(90deg,rgba(125,255,47,.16),transparent 70%)}
+a.row:hover .l{text-decoration:underline;text-underline-offset:4px}
+.more{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);margin-top:18px}
+.tourbk{margin:26px 0 0;padding:16px 18px;border:1px solid var(--ligne);background:var(--voile);font-size:16px}
+.tourbk b{font-weight:800;margin-right:6px}
+.tourbk a{font-weight:700;border-bottom:1px solid var(--ligne)}.tourbk a:hover{color:var(--vert)}
+.albtxt p{margin:0 0 14px;opacity:.9;max-width:62ch}
+.credits{margin:6px 0 24px;border-top:1px solid var(--ligne);border-bottom:1px solid var(--ligne)}
+.credits summary{cursor:pointer;padding:12px 0;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);list-style:none}
+.credits summary::-webkit-details-marker{display:none}
+.credits summary::after{content:" +";color:var(--vert)}.credits[open] summary::after{content:" −"}
+.credits div{padding:0 0 16px;font-size:14.5px;color:var(--gris);line-height:1.7}
+.credits b{color:var(--blanc);font-weight:600}
+
+/* musique */
+.album{display:grid;grid-template-columns:minmax(0,400px) minmax(0,1fr);gap:48px;align-items:start}
+.album .cov img{width:100%;aspect-ratio:1;object-fit:cover;box-shadow:0 30px 80px rgba(0,0,0,.5);transition:transform .3s}
+.album .cov:hover img{transform:translateY(-3px)}
+.tracks{columns:2;column-gap:28px;font-family:var(--mono);font-size:13.5px;margin:18px 0 26px;padding:0;list-style:none;counter-reset:t}
+.tracks li{padding:6px 0;border-bottom:1px solid var(--ligne);break-inside:avoid;counter-increment:t}
+.tracks li::before{content:counter(t,decimal-leading-zero);color:var(--gris);margin-right:10px}
+.plats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.plats a{border:1px solid var(--ligne);padding:12px 10px;display:flex;align-items:center;justify-content:center;gap:9px;font-family:var(--mono);font-size:12px;white-space:nowrap;min-width:0;background:var(--voile);transition:border-color .2s}
+.plats a:hover{border-color:var(--blanc)}
+.plats img{width:20px;height:20px}
+.plats a.main{background:var(--blanc);color:var(--nuit);border-color:var(--blanc);grid-column:1/-1;justify-content:center;font-weight:700}
+.disco-h{margin:70px 0 22px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);font-weight:400}
+.disco{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;list-style:none;padding:0;margin:0}
+.disco li{display:flex;flex-direction:column;gap:12px;max-width:200px}
+.disco a.dc{display:block}
+.disco img{width:100%;max-width:200px;aspect-ratio:1;object-fit:cover;border:1px solid var(--ligne);transition:transform .25s,border-color .25s}
+.disco a.dc:hover img{transform:translateY(-3px);border-color:var(--blanc)}
+.disco h3{font-size:15px;margin-top:10px;line-height:1.3}
+.disco p{margin:2px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--gris)}
+.buy{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--vert);color:var(--vert);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:11px 14px;transition:background .2s,color .2s}
+.buy:hover{background:var(--vert);color:var(--nuit)}
+.plats .buy{grid-column:1/-1}
+.buy.sm{font-size:10.5px;padding:8px 6px;white-space:nowrap;margin-top:auto;width:100%}
+
+/* merch */
+.merch-intro{margin:-14px 0 34px;color:var(--gris);max-width:60ch}
+.merch{display:grid;grid-template-columns:repeat(2,minmax(0,400px));justify-content:center;gap:56px;align-items:center}
+.merch a{display:block;text-align:center}
+.merch img{width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55));transition:transform .4s}
+.merch a:hover img{transform:translateY(-6px) rotate(-.6deg)}
+.merch p{margin:18px 0 0;font-weight:600;display:flex;justify-content:center;gap:14px;align-items:baseline;flex-wrap:wrap}
+.merch p span{font-family:var(--mono);font-size:11px;color:var(--vert);letter-spacing:.1em;text-transform:uppercase}
+
+/* vidéos et photos */
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:960px;margin:0 auto}
+.vid{position:relative;aspect-ratio:16/9;border:1px solid var(--ligne);background:#000 center/cover;display:flex;align-items:flex-end;padding:14px;overflow:hidden;cursor:pointer}
+.vid::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,6,18,.9),transparent 60%);transition:opacity .3s}
+.vid:hover::before{opacity:.7}
+.vid.big{grid-column:1/-1}
+.skwrap{padding:10px 0 20px}
+.skwrap .vid{max-width:960px;margin:0 auto}
+.vid .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;transition:transform .2s}
+.vid:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+.vid .play::after{content:"";border-left:14px solid var(--nuit);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.vid p{position:relative;margin:0;font-weight:600;line-height:1.3}
+.vid small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--gris);letter-spacing:.1em;text-transform:uppercase;font-weight:400}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.chanw{text-align:center;margin:30px 0 56px}
+.chan img{width:20px;height:20px;transition:filter .2s}
+.chan:hover img{filter:invert(1)}
+.gal{columns:3;column-gap:12px;margin-top:70px}
+.gal button{padding:0;border:0;background:none;cursor:zoom-in;display:block;width:100%;margin:0 0 12px;break-inside:avoid}
+.gal img{width:100%;height:auto;transition:filter .3s}
+.gal button:hover img{filter:brightness(1.12)}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,3,10,.94);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) 16px max(16px,env(safe-area-inset-bottom,0px))}
+.lb[hidden]{display:none}
+.lb img{max-height:90vh;width:auto;max-width:100%}
+.lb button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px));background:none;border:1px solid var(--ligne);color:var(--blanc);width:44px;height:44px;font-size:20px;cursor:pointer}
+
+/* scène */
+.scene-h{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--vert);font-weight:400;margin:56px 0 24px;padding-top:40px;border-top:1px solid var(--ligne)}
+.lists.scene{margin-top:56px;padding-top:44px;border-top:1px solid var(--ligne)}
+.lists{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.lists h3{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--vert);font-weight:400;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{border:1px solid var(--ligne);padding:7px 11px;font-size:14.5px;background:var(--voile)}
+.tags li small{color:var(--gris);font-family:var(--mono);font-size:11px;margin-left:4px}
+
+/* booking */
+.booking{padding:90px 0;border-top:1px solid var(--ligne);background:linear-gradient(180deg,rgba(26,13,46,.85),rgba(10,6,18,.9))}
+.bk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end}
+.bk .who{font-size:17px;margin:20px 0 8px;font-weight:600}
+.bk .line{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:8px 0}
+.bk .line a{font-size:17px;font-weight:600}
+.bk .line svg{color:var(--vert);flex:none}
+.bk .line a:hover{color:var(--vert)}
+.copy{background:none;border:1px solid var(--ligne);color:var(--gris);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 9px;cursor:pointer}
+.copy:hover{color:var(--blanc);border-color:var(--blanc)}
+.pack{display:block;border:1px solid var(--ligne);padding:22px 24px;background:var(--voile);transition:border-color .2s}
+.pack:hover{border-color:var(--vert)}
+.pack strong{display:flex;justify-content:space-between;gap:10px;font-size:20px}
+.pack strong span{color:var(--vert)}
+.pack small{display:block;color:var(--gris);font-size:15px;margin-top:4px}
+
+footer{padding:50px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--ligne);background:rgba(10,6,18,.92)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+footer .logo{width:140px}
+footer .plat{margin:0;gap:14px}
+footer .plat a,footer .plat img{width:30px;height:30px}
+.foot{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;color:var(--gris);font-size:13px;border-top:1px solid var(--ligne);padding-top:18px}
+.foot details{max-width:70ch}
+.foot summary{cursor:pointer;list-style:none;text-decoration:underline;text-underline-offset:3px}
+.foot summary::-webkit-details-marker{display:none}
+.foot details p{margin:10px 0 0;line-height:1.6}
+
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes pulse{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+@keyframes blink{50%{opacity:.35}}
+@keyframes logoin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes lglow{0%,100%{filter:drop-shadow(0 0 2px rgba(255,255,255,.15))}50%{filter:drop-shadow(0 0 18px rgba(143,61,255,.85)) drop-shadow(0 0 3px rgba(255,255,255,.45))}}
+@keyframes lfloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@keyframes lglow{0%,100%{filter:drop-shadow(0 0 0 rgba(143,61,255,0))}50%{filter:drop-shadow(0 0 22px rgba(143,61,255,.75)) drop-shadow(0 0 4px rgba(255,255,255,.35))}}
+
+@media (max-width:1100px){.top .nav{display:none}.burger{display:grid;place-items:center}
+  .top .menu.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(10,6,18,.97);border-bottom:1px solid var(--ligne);padding:8px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px))}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--ligne);font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase}}
+@media (max-width:820px){
+  body{background-image:url(img/fond-portrait.jpg);background-attachment:scroll;font-size:16px}
+  .top .wrap{gap:12px;height:60px}.top .tri{width:28px}
+  .top .plat{gap:8px}.top .plat a,.top .plat img{width:24px;height:24px}
+  .top .lang{display:none}
+  .menu .lang{display:block;margin-top:14px;align-self:flex-start;padding:9px 12px}
+  .top .menu.open{top:60px}
+  .hero{min-height:calc(100svh - 60px)}
+  .next a{font-size:10px;letter-spacing:.08em}
+  .stats{grid-template-columns:repeat(2,auto);gap:28px 48px}
+  section.s{padding:68px 0}
+  .trio{grid-template-columns:1fr;gap:26px}
+  .crew{grid-template-columns:1fr;gap:12px}
+  .crew article{display:grid;grid-template-columns:110px 1fr;align-items:center}
+  .crew img{height:110px}
+  .crew h3 .muted{display:block;font-size:15px}
+  .row{grid-template-columns:62px minmax(0,1fr);gap:2px 12px;padding:13px 0}
+  .row .d{font-size:15px;grid-row:span 3;align-self:start;padding-top:2px}
+  .row .l{font-size:16px}.row .v{font-size:14px}
+  .row .st{justify-self:start;margin-top:5px}
+  .album{grid-template-columns:1fr;gap:26px}
+  .album .cov{max-width:420px}
+  .tracks{columns:1}
+  .plats{grid-template-columns:1fr 1fr}
+  .disco{grid-template-columns:1fr;gap:12px}
+  .disco li{display:grid;grid-template-columns:76px 1fr;gap:4px 14px;align-items:center}
+  .disco a.dc{display:contents}
+  .disco a.dc img{grid-row:span 2}
+  .disco li{max-width:none}
+  .disco .buy.sm{grid-column:2;justify-self:start;width:auto;margin-top:0;padding:7px 10px}
+  .disco img{width:76px}
+  .disco h3{margin-top:0}
+  .merch{grid-template-columns:minmax(0,360px);gap:44px}
+  .vids{grid-template-columns:1fr}
+  .gal{columns:2;column-gap:8px;margin-top:50px}.gal button{margin-bottom:8px}
+  .lists{grid-template-columns:1fr;gap:36px}
+  .booking{padding:64px 0}
+  .bk{grid-template-columns:1fr;gap:28px}
+  footer .wrap{flex-direction:column;text-align:center}
+  .foot{justify-content:center;text-align:center}
+}
+@media (max-width:370px){.top .plat a.opt{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.shoot{display:none}}
+</style>
+</head>
+<body>
+
+<canvas id="sky" aria-hidden="true"></canvas><div class="shoot" id="shoot" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#accueil" aria-label="ChabiFönK Experience, accueil"><img class="tri" src="img/triangle-blanc.svg" alt="" width="34" height="25"></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#tour" data-t="nav2">Tour</a><a href="#live" data-t="nav5">Live</a><a href="#merch" data-t="nav4">Merch</a><a href="#experience" data-t="nav1">L'Expérience</a><a href="#musique" data-t="nav3">Musique</a><a href="#booking" data-t="nav6">Booking</a>
+    </nav>
+    <div class="plat" aria-label="Plateformes">
+      <a href="https://open.spotify.com/artist/22BU8CP8IdsHC6xqOZCYul" target="_blank" rel="noopener" aria-label="Spotify"><img src="img/ico/spotify.png" alt=""></a>
+      <a href="https://www.deezer.com/fr/artist/13590613" target="_blank" rel="noopener" aria-label="Deezer" class="opt"><img src="img/ico/deezer.png" alt=""></a>
+      <a href="https://chabifonkexperience.bandcamp.com" target="_blank" rel="noopener" aria-label="Bandcamp"><img src="img/ico/bandcamp.png" alt=""></a>
+      <a href="https://soundcloud.com/chabifonkexperience" target="_blank" rel="noopener" aria-label="SoundCloud" class="opt"><img src="img/ico/soundcloud.png" alt=""></a>
+      <a href="https://www.youtube.com/@chabifonkexperience" target="_blank" rel="noopener" aria-label="YouTube"><img src="img/ico/youtube.png" alt=""></a>
+      <a href="https://www.instagram.com/chabifonkexperience/" target="_blank" rel="noopener" aria-label="Instagram"><img src="img/ico/instagram.png" alt=""></a>
+      <a href="https://www.facebook.com/chabifonkexperience" target="_blank" rel="noopener" aria-label="Facebook"><img src="img/ico/facebook.png" alt=""></a>
+    </div>
+    <button class="lang" id="lang" type="button" aria-label="Langue / Language"><b>FR</b> / EN</button>
+    <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="menu" id="menu" aria-label="Menu">
+    <a href="#tour" data-t="nav2">Tour</a><a href="#live" data-t="nav5">Live</a><a href="#merch" data-t="nav4">Merch</a><a href="#experience" data-t="nav1">L'Expérience</a><a href="#musique" data-t="nav3">Musique</a><a href="#booking" data-t="nav6">Booking</a>
+    <button class="lang" id="lang2" type="button"><b>FR</b> / EN</button>
+  </nav>
+</header>
+
+<main>
+<div class="hero" id="accueil">
+  <h1 class="hlogo"><svg class="lg" role="img" aria-label="ChabiFönK Experience" xmlns="http://www.w3.org/2000/svg" viewBox="4.85 148.85 790.05 665.3"><path d="M365.57 241.89 L439.00 353.11 A8.00 8.00 0 0 1 432.32 365.52 L382.16 365.52 A8.00 8.00 0 0 0 375.63 368.90 L364.90 384.08 A8.00 8.00 0 0 0 364.42 392.55 L386.18 432.17 A8.00 8.00 0 0 0 393.19 436.32 L492.18 436.32 A8.00 8.00 0 0 1 498.84 448.75 L436.22 543.01 A8.00 8.00 0 0 0 435.87 551.28 L465.16 604.62 A8.00 8.00 0 0 0 478.83 605.19 L545.43 504.97 A8.00 8.00 0 0 1 558.75 504.97 L630.28 612.63 A8.00 8.00 0 0 0 636.94 616.20 L704.70 616.20 L399.70 184.80 L365.72 232.87 A8.00 8.00 0 0 0 365.57 241.89 Z " fill="#FFFFFF"></path><path d="M343.41 264.42 L264.73 375.72 A8.00 8.00 0 0 0 264.25 384.18 L389.40 612.05 A8.00 8.00 0 0 0 396.41 616.20 L435.20 616.20 A8.00 8.00 0 0 0 442.21 604.35 L394.88 518.17 A8.00 8.00 0 0 1 401.89 506.32 L432.28 506.32 A8.00 8.00 0 0 0 438.94 502.75 L461.53 468.75 A8.00 8.00 0 0 0 454.87 456.32 L381.36 456.32 A8.00 8.00 0 0 1 374.35 452.17 L340.87 391.21 A8.00 8.00 0 0 1 341.35 382.75 L365.27 348.90 A8.00 8.00 0 0 1 371.80 345.52 L395.16 345.52 A8.00 8.00 0 0 0 401.84 333.11 L356.62 264.63 A8.00 8.00 0 0 0 343.41 264.42 Z " fill="#FFFFFF"></path><path d="M241.61 408.41 L94.70 616.20 L355.35 616.20 A8.00 8.00 0 0 0 362.36 604.35 L349.04 580.10 A8.00 8.00 0 0 0 342.03 575.95 L209.40 575.95 A8.00 8.00 0 0 1 202.87 563.33 L241.42 508.79 A6.96 6.96 0 0 1 253.19 509.46 L256.14 514.83 A8.00 8.00 0 0 1 255.66 523.29 L241.50 543.33 A8.00 8.00 0 0 0 248.03 555.95 L322.26 555.95 A8.00 8.00 0 0 0 329.27 544.10 L255.16 409.17 A8.00 8.00 0 0 0 241.61 408.41 Z" fill="#FFFFFF"></path><circle cx="552.04" cy="555.05" r="17.63" fill="#FFFFFF"></circle><circle cx="528.60" cy="591.81" r="17.63" fill="#FFFFFF"></circle><circle cx="575.63" cy="591.82" r="17.63" fill="#FFFFFF"></circle><g fill="#FFFFFF"><path d="M90.48 628.12 92.02 626.33H94.06L95.47 628.25C99.72 634.04 128.03 680.55 126.74 683.47C126.21 684.67 118.65 684.43 117.12 684.44C115.22 684.44 100.74 684.37 100.08 684.04L99.57 683.78L100.33 681.99C100.79 680.92 101.62 679.39 102.25 678.41L103.41 676.62L102.51 675.21C99.96 671.2 97.45 665.51 94.7 661.39L94.19 660.62L92.79 662.8C86.29 672.84 78.89 686.81 74.36 697.86C81.91 698.19 89.69 698.15 97.26 698.24L120.04 698.5L123.88 694.66L127.71 690.82H128.74C130.1 690.82 130.81 691.96 131.32 693.02C132.64 695.74 141.69 714.27 140.77 715.72C139.95 717.02 115.19 716.92 111.72 716.96C97.56 717.11 83.4 717.18 69.24 717.32C62.84 717.39 54.39 717.84 48.26 717.55C46.86 717.48 42.06 717.05 41.11 716.19C40.3 715.46 41.05 713.93 41.36 713.04C47 696.59 78.9 641.64 90.48 628.12Z"></path><path d="M167.67 716.66 167.88 718.24H156.69L145.61 718.35L145.93 716.45C148.56 700.63 147.16 663.35 146.03 646.35L145.93 644.77L157.12 644.45C158.52 644.41 167.92 643.94 168.28 644.53C168.58 645.02 167.65 647.58 167.48 648.31C166.69 651.59 166.83 657.9 166.83 661.45V672.96H201.14L201.03 662.82C200.95 655.22 200.31 652.08 199.45 644.88C203.39 644.57 207.32 644.49 211.27 644.35L222.88 643.93L222.57 645.19C219.7 656.68 220.48 690.25 221.19 703.2C221.37 706.61 221.63 710.36 222.27 713.7C222.42 714.46 223.12 717.28 222.94 717.84C222.68 718.61 219.2 718.47 218.34 718.49C216.37 718.53 202.46 718.84 201.72 718.34C201.25 718.03 201.34 716.98 201.34 716.46C201.33 713.2 201.63 691.15 200.9 689.97C200.82 689.84 200.72 689.74 200.59 689.66C199.49 688.96 168.63 688.53 167.21 690.16C166.02 691.52 166.9 702.14 167.01 704.54C167.18 708.01 167.24 713.41 167.67 716.66Z"></path><path d="M299.61 717.82H291.38L290.85 716.66C290.13 715.08 286.35 707.88 285.47 706.63L284.73 705.58H278.29C271.61 705.58 264.26 705.71 257.6 706.1L255.8 706.21L255.07 707.58C253.65 710.21 252.33 712.76 250.95 715.39L249.79 717.61L241.45 717.72C239.71 717.74 229.73 718.26 229.26 717.34C229 716.84 229.19 716 229.39 715.5C230.88 711.78 236.31 703.02 238.59 698.91C248.38 681.25 258.27 663.59 268.3 646.08C268.8 645.2 269.35 644.6 270.44 644.61C271.8 644.62 272.15 645.5 272.68 646.52C276.65 654.23 311.7 715.06 311.64 716.85C311.63 716.93 311.62 717 311.59 717.07C311.18 717.95 301.17 717.82 299.61 717.82ZM277.02 691.22C277.28 690.83 277.72 689.83 277.97 689.53L278.5 688.9L277.97 687.63C277.42 686.3 272.03 675.43 271.52 674.9C271.38 674.76 271.21 674.65 271.01 674.72C270.41 674.92 268.69 678.95 268.25 679.8C267.28 681.67 263.44 688.99 263.04 690.5C262.98 690.73 262.94 691.01 263.09 691.22C263.62 691.95 269.53 691.85 270.69 691.85H276.6L277.02 691.22Z"></path><path d="M315.67 718.45C315.54 715.52 316.96 707.23 317.22 703.1C317.98 690.73 318.05 676.96 317.4 664.59C317.3 662.64 315.76 648.46 315.83 648.34C316.23 647.63 317.41 647.73 318.12 647.72C334.98 647.39 373.89 639.23 385.23 653.91C388.97 658.75 389.04 667.94 385.92 673.15C385.15 674.43 381.34 678.81 381.34 679.1C381.34 679.2 381.36 679.3 381.42 679.39C381.94 680.29 388.94 683.84 391.22 691.51C392.37 695.36 392.02 702.24 390.11 705.94C382.22 721.18 357.92 718.03 342.91 718.14C335.68 718.2 321.97 718.99 315.67 718.45ZM347.55 687.95 336.57 688.58 336.46 695.02C336.44 696.24 336.21 701.64 336.91 702.28C338.22 703.47 362.49 702.52 365.28 701.72C369.52 700.49 373.23 696.72 370.64 692.18C367.24 686.24 353.66 687.59 347.55 687.95ZM337.2 660.5 335.83 660.82V666.73C335.83 668.01 335.69 672.83 336.5 673.58C336.92 673.97 337.66 674.05 338.21 674.09C341.9 674.36 359.55 673.57 362.59 672.46C365.89 671.26 368.68 668.01 367.09 664.4C365.91 661.73 363.28 660.34 360.49 659.96C357.62 659.57 339.71 659.92 337.2 660.5Z"></path><path d="M399.57 717.19C401.67 709.48 401.41 655.75 399.28 648.01C399.07 647.22 398.59 645.99 399.28 645.33C400.41 644.24 415.82 644.51 418.5 644.48C420.22 644.46 422.52 643.87 422.39 645.89C422.22 648.5 421.15 651.37 420.95 654.73C420.37 664.38 420.83 676.24 420.94 686.08C421.02 693.66 420.8 704.59 421.53 711.83C421.7 713.46 422.26 715.05 422.59 716.66L422.9 718.24H411.08L399.26 718.35L399.57 717.19Z"></path><path d="M491.11 644.88 494.8 644.77 495.86 647.41C496.26 648.42 496.58 649.11 497.13 650.05C498.06 652.08 498.96 654.13 499.87 656.17C500.43 657.27 503.81 664.16 503.23 664.84C502.83 665.31 492.41 661.62 490.21 661.24C488.83 661 456.21 661.98 455.11 662.29L454.37 662.5L454.27 663.56C454.1 665.26 453.59 674.68 454.3 675.66C455 676.63 479.77 676.36 483.14 676.42C483.92 676.44 486.59 676.19 486.44 677.22C486.39 677.65 483.17 683.2 482.69 683.94C481.98 685.01 478.64 690.48 478.01 690.88C475.94 692.24 455.63 690.94 454.23 692.68C453.49 693.59 453.59 700.96 453.59 702.55C453.61 705.96 453.72 714.29 454.58 717.29L454.79 718.03H449.83C447.87 718.03 432.57 718.57 432.39 718.36C432.02 717.93 433.36 709.65 433.55 708.5C434.96 699.9 434.54 669.46 433.99 659.76C433.83 657.08 432.27 649.03 432.49 647.7C432.55 647.33 432.71 647.05 433.03 646.85C433.77 646.36 485.4 645.04 491.11 644.88Z"></path><path d="M587.08 681.34C587.04 686.86 585.7 692.34 583.27 697.22C580.85 702.09 577.36 706.34 573.29 709.69C569.21 713.04 564.58 715.5 559.76 717.13C554.95 718.76 549.95 719.57 544.94 719.63C539.92 719.69 534.87 719 529.98 717.44C525.09 715.88 520.35 713.44 516.22 710.06C512.08 706.68 508.57 702.35 506.19 697.39C503.81 692.43 502.59 686.87 502.7 681.34C502.82 675.81 504.25 670.35 506.72 665.51C509.2 660.67 512.68 656.47 516.71 653.11C520.75 649.76 525.32 647.24 530.1 645.53C534.89 643.83 539.9 642.92 544.94 642.83C549.98 642.74 555.07 643.46 559.96 645.08C564.85 646.7 569.54 649.23 573.61 652.66C577.69 656.09 581.14 660.43 583.5 665.37C585.86 670.3 587.12 675.82 587.08 681.34ZM567.01 681.2C567.1 678.29 566.58 675.34 565.47 672.63C564.35 669.92 562.64 667.46 560.51 665.47C558.38 663.48 555.84 661.97 553.15 661C550.45 660.03 547.6 659.6 544.78 659.67C541.96 659.74 539.17 660.31 536.56 661.34C533.94 662.38 531.5 663.89 529.4 665.82C527.31 667.75 525.57 670.11 524.37 672.74C523.17 675.38 522.52 678.28 522.5 681.2C522.47 684.11 523.07 687.04 524.22 689.71C525.38 692.39 527.08 694.81 529.17 696.81C531.26 698.81 533.74 700.37 536.41 701.41C539.08 702.44 541.94 702.95 544.78 702.9C547.62 702.85 550.44 702.25 553.05 701.16C555.66 700.07 558.06 698.49 560.1 696.52C562.14 694.55 563.83 692.19 565.02 689.58C566.22 686.97 566.91 684.11 567.01 681.2Z"></path><path d="M602.39 645.3 611.47 645.19 621.18 657.02C628.41 665.82 640.84 682.16 648.21 689.53L649.27 690.59L648.95 670.84C648.85 664.6 648.99 654.18 648.32 648.36L648 645.61H655.49C657.54 645.61 669.5 644.86 670 645.48C670.48 646.05 670.2 647.16 670.06 647.82C668.21 656.62 669.12 704.8 670.97 714.1C671.11 714.82 671.61 717.04 671.34 717.64C670.83 718.75 663.21 718.45 661.72 718.45H651.9L647.79 713.6C638.29 702.39 628.75 691.14 619.17 680.01C618.66 679.4 615.85 675.85 615.34 676.13C614.63 676.51 614.95 686.9 614.97 688.44C615.03 692.75 615.1 713.96 615.7 716.55L616.01 717.93H609.26C607.42 717.93 595.83 718.63 595.54 718.22C595.13 717.65 595.86 714.71 596.01 713.92C597.37 706.89 596.87 681.94 596.77 673.42C596.69 666.6 596.61 658.48 594.82 651.93C594.55 650.95 593.06 646.62 593.44 645.99C593.8 645.39 598.13 645.4 599.01 645.37C599.19 645.36 599.36 645.36 599.54 645.35C600.24 645.34 600.93 645.32 601.63 645.31C601.89 645.3 602.14 645.3 602.39 645.3Z"></path><path d="M708.08 689.98C707.99 694.64 707.91 699.3 707.83 703.96L707.57 717.81L706.8 718.2C705.77 718.72 684.23 719.11 683.23 717.54C682.47 716.36 683.67 713.36 683.96 711.91C685.99 701.74 685.62 668.17 684.89 656.82C684.67 653.43 683.64 648.98 683.53 646.68C683.51 646.06 683.61 645.46 684.09 645.03C685.15 644.06 693.24 644.69 695.15 644.76C697.21 644.84 706.77 644.93 707.86 645.97C708.79 646.86 707.69 669.3 708.31 673.38C708.36 673.7 708.46 674.23 708.87 674.26C709.76 674.32 715.9 668.58 716.98 667.61C720.54 664.43 743.42 643.78 746.06 644.07C747.66 644.25 755.53 650.94 757.08 652.39L758.88 654.06L758.62 654.57C757.8 656.22 737.97 673.41 734.89 676.25L728.35 682.28L729.38 683.05C732.16 685.14 756.12 706.54 757.14 708.12C758.06 709.56 755.97 711.16 754.92 712.27C753.44 713.82 747.08 720.68 745.44 720.82C743.63 720.98 716.94 697.05 713.28 693.89C711.93 692.74 709.92 690.87 708.38 690.12C708.33 690.09 708.12 690 708.08 689.98Z"></path><path d="M530.33 622.66 Q531.31 631.42 540.07 632.39 Q531.31 633.36 530.33 642.12 Q529.36 633.36 520.60 632.39 Q529.36 631.42 530.33 622.66 Z"></path><path d="M559.45 622.66 Q560.42 631.42 569.18 632.39 Q560.42 633.36 559.45 642.12 Q558.47 633.36 549.71 632.39 Q558.47 631.42 559.45 622.66 Z"></path><path d="M42.96 777.95 41.09 777.88 41.23 777.19C42.85 769.06 42.46 747.12 41.83 738.32C41.64 735.67 41.07 733.37 40.88 730.75C49.37 730.42 57.9 730.3 66.41 730.01C71.58 729.83 77.31 729.38 82.38 729.37C83.14 730.91 88.27 741.18 87.68 741.9C87.64 741.95 87.58 741.99 87.52 742.01C87.46 742.03 80.55 740.34 78.78 740.23C71.32 739.79 62.39 740.49 54.83 740.82C54.58 742.86 54.61 745.85 54.9 747.9L55.04 748.87H58.58C60.84 748.87 72.54 748.49 73.68 748.8C73.88 748.85 74.08 748.95 74.11 749.17C74.17 749.5 70.29 756.26 69.82 757.2L69.41 758.03H68.43C66.84 758.03 55.6 758.23 55.11 758.92C54.85 759.27 54.9 762.32 54.9 762.96V767.05H69.75C75.2 767.05 81.07 766.98 86.48 767.19L88.28 767.26L88.21 767.68C88.05 768.67 85.67 777.35 85.4 777.54C84.58 778.11 47 778.1 42.96 777.95Z"></path><path d="M124.23 730.68H131.87L137.84 737.49C138.56 738.31 143.51 744.12 144.01 744.14C144.56 744.16 149.58 738.39 150.33 737.56L156.44 730.75L164.28 730.62C165.21 730.6 171.98 730.38 172.19 730.68C172.25 730.77 172.21 730.9 172.18 730.99C171.87 731.75 156.95 748.01 154.98 750.26L152.06 753.59L158.17 760.88C162.29 765.79 166.67 770.8 170.67 775.75C170.89 776.02 171.93 777.18 171.73 777.48C171.45 777.89 165.2 777.81 164.28 777.81H156.58L154.42 775.17C152.37 772.65 150.23 770.15 148.11 767.68L143.94 762.82L139.02 768.37C136.89 770.76 134.61 773.22 132.56 775.66L131.1 777.39L125.97 777.67C124.78 777.74 116.72 778.32 116.34 777.93C116.16 777.74 116.28 777.45 116.4 777.26C118.35 773.84 135.55 755.44 135.53 753.71C135.52 752.56 119.81 734.78 117.79 732.41C117.6 732.19 116.67 731.21 116.8 730.97C116.99 730.62 123.34 730.68 124.23 730.68Z"></path><path d="M214.17 776.35V777.67L207.3 777.74C206.42 777.75 200.71 777.88 200.39 777.53C200.1 777.21 200.62 775.14 200.7 774.6C201.7 767.88 201.53 755.8 201.4 748.74C201.33 744.9 201.22 740.98 200.92 737.16C200.83 735.96 200.15 731.49 200.19 730.91C200.19 730.8 200.22 730.69 200.28 730.59C200.39 730.43 200.6 730.39 200.78 730.37C203.25 730.05 208.78 730.15 211.59 730.07C220.81 729.8 234.01 728.32 242.04 733.16C246.43 735.81 248.98 740.16 248.89 745.31C248.84 748.19 247.88 751.01 246.2 753.35C240.63 761.03 228.35 760.45 219.72 760.82C218.7 760.87 215.27 760.99 214.48 761.22C214.32 761.26 214.17 761.33 214.05 761.46C213.41 762.16 214.17 774.38 214.17 776.35ZM230.13 750.26C232.38 749.47 234.72 748.4 235.08 745.7C235.45 743.02 233.44 741.02 231.07 740.19C228.64 739.35 217.76 739.43 215.04 739.93C214.67 740 214.28 740.09 214.03 740.39C213.35 741.2 213.6 748.23 213.75 749.58C213.81 750.06 213.89 750.65 214.37 750.88C215.76 751.56 227.96 750.62 230.13 750.26Z"></path><path d="M278.94 777.95 277.07 777.88 277.21 777.19C278.83 769.06 278.44 747.12 277.81 738.32C277.62 735.67 277.05 733.37 276.86 730.75C285.35 730.42 293.88 730.3 302.39 730.01C307.56 729.83 313.29 729.38 318.36 729.37C319.12 730.91 324.25 741.18 323.66 741.9C323.62 741.95 323.56 741.99 323.5 742.01C323.44 742.03 316.53 740.34 314.76 740.23C307.29 739.79 298.37 740.49 290.81 740.82C290.56 742.86 290.59 745.85 290.88 747.9L291.02 748.87H294.56C296.82 748.87 308.52 748.49 309.66 748.8C309.86 748.85 310.06 748.95 310.09 749.17C310.15 749.5 306.27 756.26 305.8 757.2L305.38 758.03H304.41C302.82 758.03 291.58 758.23 291.09 758.92C290.83 759.27 290.88 762.32 290.88 762.96V767.05H305.73C311.18 767.05 317.05 766.98 322.46 767.19L324.26 767.26L324.19 767.68C324.03 768.67 321.65 777.35 321.37 777.54C320.56 778.11 282.98 778.1 278.94 777.95Z"></path><path d="M394.7 777.95 388.32 777.88 382.07 769.13 375.9 760.46H371.87C370.69 760.46 367.78 760.46 366.73 760.67L365.69 760.88V767.26C365.69 768.44 366.06 777.05 365.86 777.24C365.49 777.62 359.95 777.65 359.03 777.67L352.23 777.81L352.44 776.56C353.64 769.36 353.44 743.62 352.78 735.79C352.7 734.85 352 731.22 352.53 730.79C353.44 730.07 371.01 729.89 373.51 729.86C382.44 729.78 393.04 729.05 398.95 737.44C400.87 740.17 401.08 741.66 401.09 744.88C401.1 750.01 399.97 752.72 395.82 756.1C394.66 757.05 389.84 759.52 389.84 759.94C389.85 761.17 402.12 775.72 402.7 777.37C402.77 777.58 402.8 777.83 402.6 777.98C402.32 778.2 395.66 777.96 394.7 777.95ZM365.55 746.44 365.76 750.81 366.66 750.95C368.3 751.2 379.72 750.7 381.48 750.32C382.76 750.03 383.96 749.57 384.99 748.75C386.31 747.68 387.12 746.28 386.9 744.54C386.62 742.46 384.97 740.89 383.06 740.19C381.17 739.5 367.16 739.18 366 740.38C365.26 741.16 365.5 745.26 365.55 746.44Z"></path><path d="M431.14 777.05C432.53 771.98 432.35 736.66 430.95 731.57C430.81 731.05 430.5 730.24 430.95 729.81C431.69 729.09 441.83 729.26 443.59 729.24C444.72 729.23 446.23 728.85 446.14 730.17C446.03 731.89 445.33 733.77 445.2 735.98C444.82 742.33 445.12 750.13 445.19 756.6C445.24 761.58 445.1 768.76 445.58 773.52C445.69 774.6 446.06 775.64 446.27 776.7L446.48 777.74H438.71L430.94 777.81L431.14 777.05Z"></path><path d="M476.53 777.95 474.66 777.88 474.8 777.19C476.42 769.06 476.03 747.12 475.4 738.32C475.21 735.67 474.64 733.37 474.45 730.75C482.94 730.42 491.47 730.3 499.98 730.01C505.15 729.83 510.88 729.38 515.95 729.37C516.7 730.91 521.84 741.18 521.25 741.9C521.21 741.95 521.15 741.99 521.08 742.01C521.03 742.03 514.12 740.34 512.35 740.23C504.88 739.79 495.96 740.49 488.4 740.82C488.15 742.86 488.18 745.85 488.47 747.9L488.61 748.87H492.15C494.41 748.87 506.11 748.49 507.25 748.8C507.45 748.85 507.65 748.95 507.68 749.17C507.74 749.5 503.86 756.26 503.39 757.2L502.97 758.03H502C500.41 758.03 489.17 758.23 488.68 758.92C488.42 759.27 488.47 762.32 488.47 762.96V767.05H503.32C508.77 767.05 514.63 766.98 520.05 767.19L521.85 767.26L521.78 767.68C521.62 768.67 519.23 777.35 518.96 777.54C518.15 778.11 480.57 778.1 476.53 777.95Z"></path><path d="M555.74 729.78 561.71 729.71 568.1 737.49C572.85 743.27 581.02 754.01 585.87 758.86L586.56 759.56L586.35 746.58C586.29 742.47 586.38 735.62 585.94 731.8L585.73 729.99H590.65C592 729.99 599.86 729.49 600.19 729.9C600.5 730.28 600.32 731 600.23 731.44C599.02 737.23 599.61 768.9 600.83 775.01C600.92 775.49 601.25 776.95 601.07 777.34C600.74 778.07 595.73 777.88 594.75 777.88H588.29L585.59 774.69C579.34 767.32 573.07 759.92 566.78 752.6C566.44 752.21 564.59 749.87 564.25 750.05C563.79 750.3 564 757.14 564.01 758.15C564.05 760.98 564.1 774.93 564.49 776.63L564.7 777.53H560.26C559.05 777.53 551.43 778 551.24 777.72C550.97 777.35 551.45 775.42 551.55 774.9C552.44 770.28 552.12 753.88 552.05 748.27C551.99 743.79 551.94 738.45 550.76 734.14C550.59 733.5 549.61 730.65 549.86 730.23C550.09 729.84 552.94 729.85 553.52 729.83C553.64 729.83 553.75 729.82 553.87 729.82C554.33 729.81 554.78 729.8 555.24 729.79C555.41 729.79 555.58 729.78 555.74 729.78Z"></path><path d="M656.07 728.88 656.9 727.91H658.01L658.77 728.95C661.08 732.09 676.44 757.32 675.74 758.9C675.45 759.56 671.35 759.42 670.52 759.43C669.49 759.43 661.63 759.39 661.27 759.21L661 759.07L661.41 758.1C661.66 757.52 662.11 756.69 662.45 756.16L663.08 755.18L662.59 754.42C661.21 752.24 659.85 749.16 658.36 746.93L658.08 746.51L657.32 747.69C653.79 753.13 649.78 760.72 647.32 766.71C651.42 766.89 655.64 766.87 659.75 766.91L672.1 767.05L674.18 764.97L676.26 762.89H676.82C677.56 762.89 677.94 763.51 678.22 764.08C678.94 765.56 683.84 775.61 683.35 776.4C682.9 777.1 669.47 777.05 667.59 777.07C659.91 777.15 652.23 777.19 644.55 777.27C641.08 777.3 636.49 777.55 633.16 777.39C632.4 777.35 629.8 777.12 629.29 776.65C628.85 776.26 629.25 775.43 629.42 774.94C632.48 766.02 649.79 736.21 656.07 728.88Z"></path><path d="M713.43 777.95 711.55 777.88 711.69 777.19C713.32 769.06 712.93 747.12 712.3 738.32C712.11 735.67 711.54 733.37 711.35 730.75C719.84 730.42 728.37 730.3 736.88 730.01C742.05 729.83 747.78 729.38 752.85 729.37C753.6 730.91 758.74 741.18 758.15 741.9C758.1 741.95 758.05 741.99 757.98 742.01C757.93 742.03 751.02 740.34 749.25 740.23C741.78 739.79 732.86 740.49 725.3 740.82C725.05 742.86 725.07 745.85 725.37 747.9L725.5 748.87H729.04C731.31 748.87 743.01 748.49 744.15 748.8C744.35 748.85 744.55 748.95 744.58 749.17C744.63 749.5 740.76 756.26 740.29 757.2L739.87 758.03H738.9C737.31 758.03 726.07 758.23 725.57 758.92C725.32 759.27 725.37 762.32 725.37 762.96V767.05H740.22C745.67 767.05 751.53 766.98 756.95 767.19L758.75 767.26L758.68 767.68C758.52 768.67 756.13 777.35 755.86 777.54C755.05 778.11 717.47 778.1 713.43 777.95Z"></path></g></svg></h1>
+  <p class="tag" data-t="tag">Trois alchimistes, quelque part entre les étoiles et le dancefloor.</p>
+  <div class="cta"><a class="btn plein" href="#musique" data-t="cta1">▶ Écouter</a><a class="btn" href="#tour" data-t="cta2">Tour 2026</a></div>
+  <div class="next"><a id="nextpill" href="#tour"><i></i><span data-t="nextlab">Prochaine eXperience</span><span id="nexti"></span></a></div>
+</div>
+
+<div class="skwrap" id="sklive"><div class="wrap"><a class="vid big" data-yt="drLkUm1I-6k" data-start="110" href="https://www.youtube.com/watch?v=drLkUm1I-6k&amp;t=110" target="_blank" rel="noopener" style="background-image:url(img/photo5.jpg)"><span class="play"></span><p><small data-t="v1">Concert complet · 1h30</small>SK-Live</p></a></div></div>
+
+<div class="exp" id="experience"><div class="wrap">
+  <div class="orb"><img id="orb" src="img/sphere.png" alt="" width="800" height="800" loading="lazy"></div>
+  <span class="k" data-t="exp_k">L'Expérience</span>
+  <p class="lead2" data-t="exp_big">Trois alchimistes, quelque part entre les étoiles et le dancefloor, là où les genres se dissolvent à travers un groove cosmique.</p>
+  <p class="small" data-t="exp_small">Ce power trio instrumental (Clavier/Basse — Guitare/Fx — Batterie/Sampler), fusionne <strong>rock psychédélique-progressif</strong> et musiques électroniques des Sound System (<strong>dub, techno, trance</strong>), dans un live pointu, intense et totalement décalé.</p>
+  <div class="stats">
+    <div><strong>15</strong><span data-t="st1">ans en orbite</span></div>
+    <div><strong>200+</strong><span data-t="st2">concerts</span></div>
+    <div><strong>5</strong><span data-t="st3">albums</span></div>
+    <div><strong>150k+</strong><span data-t="st4">écoutes</span></div>
+  </div>
+</div></div>
+
+<section class="s" id="tour"><div class="wrap">
+  <div class="sec-h"><span class="n">On tour · 2026</span><h2 data-t="s2h"><span class="pre">Tour /</span> Prochaines e<span class="x">X</span>periences</h2></div>
+  <div class="log" id="log"></div>
+  <p class="more" data-t="more">+ de dates à venir</p>
+  <p class="tourbk"><b data-t="tbk">Booker l'e<span class="x">X</span>périence :</b> <a href="mailto:chabifonkontour@gmail.com">chabifonkontour@gmail.com</a> · <a href="tel:+33647932155">06 47 93 21 55</a></p>
+</div></section>
+
+<section class="s" id="live"><div class="wrap">
+  <div class="sec-h"><span class="n" data-t="s5n">Live</span><h2 data-t="s5h">Transmissions vidéo</h2></div>
+  <div class="vids">
+    <a class="vid" data-yt="KJpsWZ2k3XY" href="https://www.youtube.com/watch?v=KJpsWZ2k3XY" target="_blank" rel="noopener" style="background-image:url(img/photo4.jpg)"><span class="play"></span><p><small>Teaser</small>Teaser live</p></a>
+    <a class="vid" data-yt="_-FbTsz_aqI" href="https://www.youtube.com/watch?v=_-FbTsz_aqI" target="_blank" rel="noopener" style="background-image:url(img/photo3.jpg)"><span class="play"></span><p><small>Les Ondes S'en Mêlent</small>Planète</p></a>
+    <a class="vid" data-yt="oU27hjvjFrg" href="https://www.youtube.com/watch?v=oU27hjvjFrg" target="_blank" rel="noopener" style="background-image:url(img/photo6.jpg)"><span class="play"></span><p><small>Les Ondes S'en Mêlent</small>Trans X Store</p></a>
+    <a class="vid" data-yt="jlXr1CAmQ7o" href="https://www.youtube.com/watch?v=jlXr1CAmQ7o" target="_blank" rel="noopener" style="background-image:url(img/photo2.jpg)"><span class="play"></span><p><small>Live session</small>DROÏD</p></a>
+  </div>
+  <p class="chanw"><a class="btn chan" href="https://www.youtube.com/@chabifonkexperience" target="_blank" rel="noopener"><img src="img/ico/youtube.png" alt="" width="20" height="20"><span data-t="chan">Tous les clips et vidéos live sur YouTube ↗</span></a></p>
+  <div class="gal" id="gal">
+    <button type="button"><img src="img/photo4.jpg" alt="ChabiFönK Experience en concert, lumières bleues" loading="lazy"></button>
+    <button type="button"><img src="img/photo5.jpg" alt="Le guitariste de ChabiFönK Experience sur scène" loading="lazy"></button>
+    <button type="button"><img src="img/photo3.jpg" alt="ChabiFönK Experience en concert devant le public" loading="lazy"></button>
+    <button type="button"><img src="img/photo6.jpg" alt="ChabiFönK Experience sous les lumières vertes" loading="lazy"></button>
+    <button type="button"><img src="img/photo2.jpg" alt="Le trio ChabiFönK Experience en studio" loading="lazy"></button>
+  </div>
+</div></section>
+
+<section class="s" id="merch"><div class="wrap">
+  <div class="sec-h"><span class="n" data-t="s4n">Merch</span><h2 data-t="s4h">Le merch</h2></div>
+  <p class="merch-intro" data-t="mi">Tous nos albums sont disponibles en CD et en digital, et EXPLÖR3 aussi en vinyle, sur notre Bandcamp.</p>
+  <div class="merch">
+    <a href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener"><img src="img/merch-cd.png" alt="EXPLÖR3 en CD digipack" width="1100" height="692" loading="lazy"><p><span data-t="m1" style="font-family:var(--texte);font-size:17px;color:var(--blanc);letter-spacing:0;text-transform:none">CD digipack EXPLÖR3</span><span>Bandcamp ↗</span></p></a>
+    <a href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener"><img src="img/merch-vinyl.png" alt="EXPLÖR3 en vinyle" width="1100" height="709" loading="lazy"><p><span data-t="m2" style="font-family:var(--texte);font-size:17px;color:var(--blanc);letter-spacing:0;text-transform:none">Vinyle EXPLÖR3</span><span>Bandcamp ↗</span></p></a>
+  </div>
+  <p style="text-align:center;margin:44px 0 0"><a class="buy" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buym">Voir tout le merch sur Bandcamp ↗</a></p>
+</div></section>
+
+<section class="s"><div class="wrap">
+  <div class="sec-h"><span class="n" data-t="s1n">Équipage</span><h2 data-t="s1h">Le trio</h2></div>
+  <div class="trio">
+    <img src="img/trio.jpg" alt="Yael Charton, Mathieu Rivaud et David Legeron, le trio ChabiFönK Experience, en studio" width="1268" height="842" loading="lazy">
+    <div>
+      <p class="lede" data-t="bio1">Imaginez Pink Floyd et Hendrix qui jammeraient avec Hilight Tribe, High Tone et Infected Mushroom… quelque part dans une autre dimension.</p>
+      <p data-t="bio2">Fondé au début des années 2010 par des musiciens des Deux-Sèvres, venus des scènes punk-métal, funk, reggae et des arts de la rue, ChabiFönK Experience distille une musique hybride au groove « fönky ». Sons interstellaires, énergie brute, lâcher prise total : les trois musiciens ont pour point commun le partage, le transfert d'énergie et l'envie d'emmener le public ailleurs.</p>
+    </div>
+  </div>
+  <p class="quote" data-t="quote">« Des gros riffs à la RATM ou Hendrix, et l'électro underground des rave parties. »</p>
+  <div class="crew">
+    <article><img src="img/membre-yael.jpg" alt="Yael Charton à la basse" width="480" height="480" loading="lazy"><div><span class="r" data-t="r1">Clavier · Basse</span><h3>Yael Charton <span class="muted" style="font-weight:400">« Daddy Bass »</span></h3></div></article>
+    <article><img src="img/membre-david.jpg" alt="David Legeron à la guitare" width="480" height="480" loading="lazy"><div><span class="r" data-t="r2">Guitare · Effets</span><h3>David Legeron <span class="muted" style="font-weight:400">« Vox Augusti »</span></h3></div></article>
+    <article><img src="img/membre-mathieu.jpg" alt="Mathieu Rivaud à la batterie" width="480" height="480" loading="lazy"><div><span class="r" data-t="r3">Batterie · Sampler</span><h3>Mathieu Rivaud <span class="muted" style="font-weight:400">« Batmat »</span></h3></div></article>
+  </div>
+  <div class="infl"><h3 data-t="infl">Influences</h3>
+    <ul class="tags big">
+      <li>Pink Floyd</li><li>Jimi Hendrix</li><li>Ozric Tentacles</li><li>Rage Against The Machine</li><li>Infected Mushroom</li><li>Hilight Tribe</li><li>High Tone</li><li>La P'tite Fumée</li><li>Juno Reactor</li><li>Shpongle</li><li>Kraftwerk</li><li>Dub Trio</li><li>Strup X</li>
+    </ul></div>
+  <div class="lists scene">
+    <div><h3 data-t="l1">Festivals et lieux</h3>
+      <ul class="tags">
+        <li>Hadra Trance Festival <small>03</small></li><li>Equinox Festival <small>UK</small></li><li>Au Fil du Son <small>86</small></li><li>Crescendo Festival <small>17</small></li>
+        <li>Les Tribus Sonores <small>67</small></li><li>Le Molodoï <small>67</small></li><li>Les Ondes S'en Mêlent <small>17</small></li><li>La Motte des Fées <small>17</small></li>
+        <li>Tonnay Bon ! <small>17</small></li><li>Buena Onda <small>07</small></li><li>Le FestBouc <small>69</small></li><li>The Smöll Festivöll <small>44</small></li>
+        <li>Festival de la Fabrik <small>79</small></li><li>Les Remparts font du bruit <small>22</small></li><li>Bassines Non Merci · Sainte-Soline <small>79</small></li>
+        <li>Le Républic Corner <small>86</small></li><li>Salle Émeraude · Boc'hall <small>79</small></li><li>L'Ogre Rouge <small>17</small></li><li>La Graine d'Orge <small>17</small></li>
+      </ul></div>
+    <div><h3 data-t="l2">Ils ont partagé la scène</h3>
+      <ul class="tags">
+        <li>Ska-P</li><li>Asian Dub Foundation</li><li>Hilight Tribe</li><li>Juno Reactor</li><li>Ultra Vomit</li><li>Deluxe</li><li>Too Many Zooz</li><li>Zenzile</li>
+        <li>La P'tite Fumée</li><li>Mezerg</li><li>Rakoon</li><li>Ace Ventura</li><li>Radium</li><li>Manu le Malin</li><li>Étienne de Crécy</li><li>Punish Yourself</li><li>Soviet Suprem</li><li>Burning Heads</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<section class="s" id="musique"><div class="wrap">
+  <div class="sec-h"><span class="n" data-t="s3n">Musique</span><h2>EXPLÖR3</h2></div>
+  <div class="album">
+    <a class="cov" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener" aria-label="Écouter EXPLÖR3"><img src="img/explor3.jpg" alt="Pochette de l'album EXPLÖR3 de ChabiFönK Experience" width="800" height="817" loading="lazy"></a>
+    <div>
+      <div class="albtxt">
+      <p class="lede" data-t="alb">« EXPLÖR3 », le 3e album de ChabiFönK Experience, vous entraîne dans une aventure auditive cosmique marquant les 10 ans hors taxes du groupe.</p>
+      <p data-t="alb2">Ce « concept album » est une véritable odyssée musicale affranchie de toutes conventions, fusion audacieuse de multiples genres : rock, musique psychédélique, techno, trance, jungle, drum &amp; bass, dub, krautrock et métal progressif. « EXPLÖR3 » vous emmènera au-delà de la stratosphère, où chaque piste est une étoile lumineuse dans la galaxie musicale unique du ChabiFönK.</p>
+      <p class="muted" data-t="alb3">Sorti le 2 novembre 2023 en CD, vinyle et streaming. Enregistré et mixé au Studio de l'Arnoult par Alexis Lacaze, masterisé au Studio Storm Mastering par Clément Bastiat. Artwork : SandFlake.</p>
+      </div>
+      <ol class="tracks"><li>Intro</li><li>Antares</li><li>Crunchy Milky Way</li><li>Sweet Star</li><li>Sideral Silence</li><li>Polarity</li><li>Pandora Project</li><li>Trans X Store</li></ol>
+      <details class="credits"><summary data-t="cred">Crédits</summary><div data-t="credt">Composé et arrangé par ChabiFönK Experience.<br><b>David Legeron</b> « Vox Augusti » : guitares, fx et MAO · <b>Mathieu Rivaud</b> « Batmat » : cymbales, batterie et pitreries · <b>Yael Charton</b> « Daddy Bass » : basse, clavier, fx et MAO · <b>Valentin Girard</b> : management et production.<br>Arrangements additionnels : Frédéric Bonnelais « Bones » sur « Crunchy Milky Way » et « Pandora Project ». Enregistré et mixé au Studio de l'Arnoult par Alexis Lacaze « Alec ». Masterisé au Studio Storm Mastering par Clément Bastiat. Artwork : SandFlake.<br>2023 ⓒ ChabiFönK Experience ⓟ Raska</div></details>
+      <div class="plats">
+        <a class="main" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener" data-t="listen">▶ Écouter EXPLÖR3</a>
+        <a href="https://open.spotify.com/artist/22BU8CP8IdsHC6xqOZCYul" target="_blank" rel="noopener"><img src="img/ico/spotify.png" alt="">Spotify</a>
+        <a href="https://www.deezer.com/fr/artist/13590613" target="_blank" rel="noopener"><img src="img/ico/deezer.png" alt="">Deezer</a>
+        <a href="https://chabifonkexperience.bandcamp.com" target="_blank" rel="noopener"><img src="img/ico/bandcamp.png" alt="">Bandcamp</a>
+        <a href="https://soundcloud.com/chabifonkexperience" target="_blank" rel="noopener"><img src="img/ico/soundcloud.png" alt="">SoundCloud</a>
+        <a href="https://www.youtube.com/@chabifonkexperience" target="_blank" rel="noopener"><img src="img/ico/youtube.png" alt="">YouTube</a>
+        <a href="https://www.instagram.com/chabifonkexperience/" target="_blank" rel="noopener"><img src="img/ico/instagram.png" alt="">Instagram</a>
+        <a class="buy" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buyalb">Acheter le CD ou le vinyle sur Bandcamp ↗</a>
+      </div>
+    </div>
+  </div>
+  <h3 class="disco-h" data-t="disco">Discographie</h3>
+  <ul class="disco">
+    <li><a class="dc" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="img/disco-mission.jpg" alt="Pochette de Missiön" width="367" height="370" loading="lazy"><span><h3>Missiön</h3><p data-t="d1">2018 · EP · 5 titres</p></span></a><a class="buy sm" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buy">Acheter · Bandcamp ↗</a></li>
+    <li><a class="dc" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="img/disco-hadra-vol10.jpg" alt="Pochette de Hadra Trance Festival Vol. 10" width="367" height="370" loading="lazy"><span><h3>Hadra Trance Festival Vol. 10</h3><p data-t="d2">2017 · compilation · « 4ème Dimension »</p></span></a></li>
+    <li><a class="dc" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="img/disco-mystic-planet-trip.jpg" alt="Pochette de Mystic Planet Trip #1" width="367" height="370" loading="lazy"><span><h3>Mystic Planet Trip #1</h3><p data-t="d3">2015 · EP/LP · 9 titres</p></span></a><a class="buy sm" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buy">Acheter · Bandcamp ↗</a></li>
+    <li><a class="dc" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="img/disco-live-cafe-du-boulevard.jpg" alt="Pochette de Live au Café du Boulevard" width="367" height="370" loading="lazy"><span><h3>Live au Café du Boulevard</h3><p data-t="d4">2014 · live · 8 titres</p></span></a><a class="buy sm" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buy">Acheter · Bandcamp ↗</a></li>
+    <li><a class="dc" href="https://linktr.ee/chabifonk" target="_blank" rel="noopener"><img src="img/disco-chabifonk-experience-2012.jpg" alt="Pochette du premier EP ChabiFönK Experience" width="367" height="370" loading="lazy"><span><h3>ChabiFönK Experience</h3><p data-t="d5">2012 · EP · remasterisé en 2021</p></span></a><a class="buy sm" href="https://chabifonkexperience.bandcamp.com/merch" target="_blank" rel="noopener" data-t="buy">Acheter · Bandcamp ↗</a></li>
+  </ul>
+</div></section>
+
+</main>
+
+<div class="booking" id="booking"><div class="wrap bk">
+  <div>
+    <span class="k">Booking · Management</span>
+    <h2 style="margin-top:12px" data-t="bkh">Booker l'e<span class="x">X</span>périence</h2>
+    <p class="who"><span data-t="ct">Contact</span> : VaL</p>
+    <div class="line"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg><a href="mailto:chabifonkontour@gmail.com">chabifonkontour@gmail.com</a><button class="copy" type="button" data-copy="chabifonkontour@gmail.com" data-t="cp">Copier</button></div>
+    <div class="line"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg><a href="tel:+33647932155">06 47 93 21 55</a><button class="copy" type="button" data-copy="+33 6 47 93 21 55" data-t="cp2">Copier</button></div>
+  </div>
+  <a class="pack" href="https://drive.google.com/drive/folders/1jOnhd2685ayFrFoZMkBzQfXmKzmbHx_w" target="_blank" rel="noopener">
+    <strong><span style="color:var(--blanc)" data-t="pack">Pack pro</span><span>↗</span></strong>
+    <small data-t="packc">Fiche technique, rider, pack communication</small>
+  </a>
+</div></div>
+
+<footer><div class="wrap">
+  <img class="logo" src="img/logo-blanc.svg" alt="ChabiFönK Experience" loading="lazy">
+  <div class="plat">
+    <a href="https://open.spotify.com/artist/22BU8CP8IdsHC6xqOZCYul" target="_blank" rel="noopener" aria-label="Spotify"><img src="img/ico/spotify.png" alt=""></a>
+    <a href="https://www.deezer.com/fr/artist/13590613" target="_blank" rel="noopener" aria-label="Deezer"><img src="img/ico/deezer.png" alt=""></a>
+    <a href="https://chabifonkexperience.bandcamp.com" target="_blank" rel="noopener" aria-label="Bandcamp"><img src="img/ico/bandcamp.png" alt=""></a>
+    <a href="https://soundcloud.com/chabifonkexperience" target="_blank" rel="noopener" aria-label="SoundCloud"><img src="img/ico/soundcloud.png" alt=""></a>
+    <a href="https://www.youtube.com/@chabifonkexperience" target="_blank" rel="noopener" aria-label="YouTube"><img src="img/ico/youtube.png" alt=""></a>
+    <a href="https://www.instagram.com/chabifonkexperience/" target="_blank" rel="noopener" aria-label="Instagram"><img src="img/ico/instagram.png" alt=""></a>
+    <a href="https://www.facebook.com/chabifonkexperience" target="_blank" rel="noopener" aria-label="Facebook"><img src="img/ico/facebook.png" alt=""></a>
+  </div>
+  <div class="foot">
+    <span data-t="copyr">© ChabiFönK Experience · power trio cosmique depuis 2011</span>
+    <details><summary data-t="ml">Mentions légales</summary>
+      <p data-t="mlt">Site édité par ChabiFönK Experience · contact : chabifonkontour@gmail.com. Hébergement : GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Ce site ne dépose aucun cookie et ne mesure pas l'audience. Les vidéos YouTube ne se chargent que lorsque vous cliquez dessus. Photos et visuels © ChabiFönK Experience et leurs auteurs.</p>
+    </details>
+  </div>
+</div></footer>
+
+<div class="lb" id="lb" hidden><button type="button" id="lbx" aria-label="Fermer">✕</button><img id="lbi" alt=""></div>
+
+<script>
+(()=>{
+// --- DATES 2026 : ajouter une ligne par date, le lien (4e valeur) est facultatif ---
+const DATES=[
+ ["2026-03-21","Boc'hall","Bressuire (79)"],
+ ["2026-05-15","Comité de la Teuf · soirée privée","(79)"],
+ ["2026-05-31","Fête de la Paix","St-Pierre-d'Exideuil (86)"],
+ ["2026-06-26","Raisin & Bulles","La Rochelle (17)"],
+ ["2026-07-17","Le Cocon des Canailles","Chalais (24)"],
+ ["2026-07-18","Le Lémovice","Marennes (17)"],
+ ["2026-08-20","Festival Crescendo","Saint-Palais (17)"],
+ ["2026-08-21","Le Bistrot Rétro","Port-d'Envaux (17)"],
+ ["2026-11-21","Friends Connection · AMAC","Confolens (16)","https://www.amac16.com/evenement/friends-connection-on-remonte-le-temps/"]
+];
+const EN={nav1:"The Experience",nav2:"Tour",nav3:"Music",nav4:"Merch",nav5:"Live",nav6:"Booking",tag:"Three alchemists, somewhere between the stars and the dancefloor.",cta1:"▶ Listen",cta2:"Tour 2026",nextlab:"Next eXperience",
+exp_k:"The Experience",exp_big:"Three alchemists, somewhere between the stars and the dancefloor, where genres dissolve into a cosmic groove.",
+exp_small:"This instrumental power trio (Keys/Bass — Guitar/Fx — Drums/Sampler) fuses <strong>psychedelic-progressive rock</strong> with sound system electronics (<strong>dub, techno, trance</strong>) in a sharp, intense and totally offbeat live show.",
+st1:"years in orbit",st2:"shows",st3:"albums",st4:"streams",s1n:"Crew",s1h:"The trio",
+bio1:"Picture Pink Floyd and Hendrix jamming with Hilight Tribe, High Tone and Infected Mushroom… somewhere in another dimension.",
+bio2:"Formed in the early 2010s by musicians from the Deux-Sèvres (France), coming from the punk-metal, funk, reggae and street arts scenes, ChabiFönK Experience distils a hybrid music with a “fönky” groove. Interstellar sounds, raw energy, total letting go: the three musicians share one thing, the urge to exchange energy and take the audience somewhere else.",
+quote:"“Big riffs à la RATM or Hendrix, and the underground electro of rave parties.”",r1:"Keys · Bass",r2:"Guitar · Effects",r3:"Drums · Sampler",infl:"Influences",
+s2h:'<span class="pre">Tour /</span> Next e<span class="x">X</span>periences',more:"+ more dates coming",s3n:"Music",listen:"▶ Listen to EXPLÖR3",alb:"“EXPLÖR3”, ChabiFönK Experience's 3rd album, takes you on a cosmic auditory adventure marking ten years of the band.",alb2:"This concept album is a true musical odyssey, unburdened by conventions, boldly fusing rock, psychedelic, techno, trance, jungle, drum &amp; bass, dub, krautrock and progressive metal. “EXPLÖR3” will take you beyond the stratosphere, where each track is a radiant star in the ChabiFönK's unique musical galaxy.",alb3:"Released on 2 November 2023 on CD, vinyl and streaming. Recorded and mixed at Studio de l'Arnoult by Alexis Lacaze, mastered at Studio Storm Mastering by Clément Bastiat. Artwork: SandFlake.",cred:"Credits",credt:"Composed and arranged by ChabiFönK Experience.<br><b>David Legeron</b> “Vox Augusti”: guitars, fx and computer music · <b>Mathieu Rivaud</b> “Batmat”: cymbals, drums and clowning · <b>Yael Charton</b> “Daddy Bass”: bass, keys, fx and computer music · <b>Valentin Girard</b>: management and production.<br>Additional arrangements: Frédéric Bonnelais “Bones” on “Crunchy Milky Way” and “Pandora Project”. Recorded and mixed at Studio de l'Arnoult by Alexis Lacaze “Alec”. Mastered at Studio Storm Mastering by Clément Bastiat. Artwork: SandFlake.<br>2023 ⓒ ChabiFönK Experience ⓟ Raska",tbk:'Book the e<span class="x">X</span>perience:',
+disco:"Discography",d1:"2018 · EP · 5 tracks",d2:"2017 · compilation · “4ème Dimension”",d3:"2015 · EP/LP · 9 tracks",d4:"2014 · live · 8 tracks",d5:"2012 · EP · remastered in 2021",
+s4n:"Merch",s4h:"Merch",mi:"All our albums are available on CD and digital, and EXPLÖR3 on vinyl too, on our Bandcamp.",m1:"EXPLÖR3 CD digipack",m2:"EXPLÖR3 vinyl",s5n:"Live",s5h:"Video transmissions",v1:"Full show · 1h30",chan:"All clips and live videos on YouTube ↗",buy:"Buy · Bandcamp ↗",buyalb:"Buy the CD or vinyl on Bandcamp ↗",buym:"See all the merch on Bandcamp ↗",
+s6n:"06 / Past orbits",s6h:"On stage with…",l1:"Festivals and venues",l2:"Shared the stage with",bkh:'Book the e<span class="x">X</span>perience',ct:"Contact",cp:"Copy",cp2:"Copy",pack:"Pro pack",packc:"Tech rider, hospitality rider, press kit",
+copyr:"© ChabiFönK Experience · cosmic power trio since 2011",ml:"Legal notice",mlt:"Published by ChabiFönK Experience · contact: chabifonkontour@gmail.com. Hosted by GitHub Pages, GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. This site sets no cookies and does no audience tracking. YouTube videos only load when you click them. Photos and artwork © ChabiFönK Experience and their authors.",
+past:"Done",next:"Next eXperience",up:"Upcoming"};
+const FR={past:"Escale effectuée",next:"Prochaine eXperience",up:"À venir"};
+let lang='fr';try{lang=localStorage.getItem('cfk-lang')||'fr'}catch(e){}
+const orig={};document.querySelectorAll('[data-t]').forEach(e=>{orig[e.dataset.t]=orig[e.dataset.t]||e.innerHTML});
+function renderDates(){
+  const today=new Date();today.setHours(0,0,0,0);let found=false;const log=document.getElementById('log');log.innerHTML='';
+  for(const [d,l,v,u] of DATES){const dt=new Date(d+'T00:00:00');let cls='',st='';
+    if(dt<today){cls='passe';st=(lang==='fr'?FR:EN).past}else if(!found){cls='go';st=(lang==='fr'?FR:EN).next;found=true}else{st=(lang==='fr'?FR:EN).up}
+    const row=document.createElement(u?'a':'div');if(u){row.href=u;row.target='_blank';row.rel='noopener'}
+    row.className='row '+cls;
+    row.innerHTML=`<span class="d">${d.slice(8,10)}.${d.slice(5,7)}</span><span class="l"></span><span class="v"></span><span class="st"></span>`;
+    row.querySelector('.l').textContent=l;row.querySelector('.v').textContent=v;row.querySelector('.st').textContent=st+(u?' ↗':'');log.appendChild(row);
+    if(cls==='go'){document.getElementById('nexti').textContent=` · ${d.slice(8,10)}.${d.slice(5,7)} · ${v}`;const p=document.getElementById('nextpill');if(u){p.href=u;p.target='_blank';p.rel='noopener'}}}
+  if(!found)document.querySelector('.next').hidden=true;
+}
+function setLang(l){lang=l;document.documentElement.lang=l;
+  document.querySelectorAll('[data-t]').forEach(e=>{const k=e.dataset.t;e.innerHTML=l==='en'&&EN[k]?EN[k]:orig[k]});
+  for(const id of ['lang','lang2'])document.getElementById(id).innerHTML=l==='fr'?'<b>FR</b> / EN':'FR / <b>EN</b>';
+  renderDates();try{localStorage.setItem('cfk-lang',l)}catch(e){}}
+setLang(lang);
+for(const id of ['lang','lang2'])document.getElementById(id).onclick=()=>setLang(lang==='fr'?'en':'fr');
+
+// menu mobile
+const bg=document.getElementById('burger'),mn=document.getElementById('menu');
+bg.onclick=()=>{const o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+mn.querySelectorAll('a').forEach(a=>a.onclick=()=>{mn.classList.remove('open');bg.setAttribute('aria-expanded','false')});
+
+// copier mail / téléphone
+document.querySelectorAll('.copy').forEach(b=>b.onclick=async()=>{const t=b.textContent;try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent=lang==='fr'?'Copié':'Copied'}catch(e){const r=document.createRange();r.selectNodeContents(b.previousElementSibling);const s=getSelection();s.removeAllRanges();s.addRange(r)}setTimeout(()=>b.textContent=t,1600)});
+
+// vidéos : sur le vrai site, le lecteur YouTube se charge dans la page au clic
+const canEmbed=/(^|\.)chabifonk\.fr$|github\.io$|^localhost$/.test(location.hostname);
+document.querySelectorAll('.vid').forEach(v=>v.addEventListener('click',e=>{if(!canEmbed)return;e.preventDefault();if(v.querySelector('iframe'))return;
+  const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${v.dataset.yt}?autoplay=1${v.dataset.start?'&start='+v.dataset.start:''}`;f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=v.textContent.trim();v.appendChild(f)}));
+
+// SK-Live : se lance tout seul, sans le son, quand il arrive à l'écran (sur le vrai site)
+const sk=document.querySelector('#sklive .vid');
+if(canEmbed&&sk&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const io=new IntersectionObserver(es=>{if(es[0].isIntersecting){io.disconnect();if(sk.querySelector('iframe'))return;
+    const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${sk.dataset.yt}?autoplay=1&mute=1&playsinline=1&start=${sk.dataset.start||0}&rel=0`;
+    f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title='SK-Live';sk.appendChild(f)}},{threshold:.5});io.observe(sk)}
+
+// photos en grand
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+document.querySelectorAll('#gal button').forEach(b=>b.onclick=()=>{const i=b.querySelector('img');lbi.src=i.src;lbi.alt=i.alt;lb.hidden=false});
+const close=()=>{lb.hidden=true};document.getElementById('lbx').onclick=close;lb.onclick=e=>{if(e.target===lb)close()};addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+
+// ciel étoilé
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const c=document.getElementById('sky'),x=c.getContext('2d');let W,H,S=[];
+function size(){const r=devicePixelRatio||1;W=c.width=innerWidth*r;H=c.height=innerHeight*r;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';
+  S=Array.from({length:Math.round(innerWidth*innerHeight/5200)},()=>({x:Math.random()*W,y:Math.random()*H,r:(Math.random()<.92?.6:1.3)*r,p:Math.random()*6.28,s:.4+Math.random()*1.4}))}
+size();addEventListener('resize',size);
+function draw(t){x.clearRect(0,0,W,H);x.fillStyle='#fff';for(const s of S){x.globalAlpha=.3+.55*(.5+.5*Math.sin(t/1000*s.s+s.p));x.beginPath();x.arc(s.x,s.y,s.r,0,6.3);x.fill()}if(!reduce)requestAnimationFrame(draw)}
+requestAnimationFrame(draw);
+
+// 3 étoiles filantes différentes, une toutes les 20 secondes, à tour de rôle
+const sh=document.getElementById('shoot');
+const STARS=[
+ {w:190,col:'255,255,255',glow:'200,170,255',dur:1300,ang:[16,26],dir:1,dist:.62},
+ {w:120,col:'214,180,255',glow:'143,61,255',dur:900,ang:[30,40],dir:1,dist:.4},
+ {w:240,col:'255,214,170',glow:'255,106,0',dur:1900,ang:[8,14],dir:-1,dist:.75}];
+let si=0;
+function shoot(){if(reduce||document.hidden)return;const s=STARS[si++%3];
+  sh.style.width=s.w+'px';sh.style.background=`linear-gradient(90deg,rgba(${s.col},0),rgba(${s.col},.9) 85%,rgb(${s.col}))`;sh.style.filter=`drop-shadow(0 0 6px rgba(${s.glow},.9))`;
+  const a=s.ang[0]+Math.random()*(s.ang[1]-s.ang[0]),y=Math.random()*innerHeight*.45;
+  const x0=s.dir>0?innerWidth*(.05+Math.random()*.5):innerWidth*(.45+Math.random()*.5);const rot=s.dir>0?a:180-a;const d=Math.min(620,innerWidth*s.dist);
+  sh.animate([{opacity:0,transform:`translate(${x0}px,${y}px) rotate(${rot}deg) translateX(0)`},{opacity:1,offset:.15},{opacity:0,transform:`translate(${x0}px,${y}px) rotate(${rot}deg) translateX(${d}px)`}],{duration:s.dur,easing:'cubic-bezier(.3,.7,.4,1)'})}
+setTimeout(shoot,4000);setInterval(shoot,20000);
+
+// la sphère suit légèrement la souris ; le rond se rapproche au défilement
+const orb=document.getElementById('orb');
+addEventListener('pointermove',e=>{if(reduce||e.pointerType!=='mouse')return;orb.style.translate=`${(e.clientX/innerWidth-.5)*18}px ${(e.clientY/innerHeight-.5)*18}px`},{passive:true});
+// le logo suit lui aussi légèrement la souris (sans rotation)
+const lg=document.querySelector('.hlogo'),lgs=lg.querySelector('.lg');lg.style.transition='translate .8s ease-out';
+addEventListener('pointermove',e=>{if(reduce||e.pointerType!=='mouse')return;lg.style.translate=`${(e.clientX/innerWidth-.5)*-12}px ${(e.clientY/innerHeight-.5)*-10}px`},{passive:true});
+// zoom / dézoom au défilement : le logo grossit doucement en s'éloignant, la sphère grossit en arrivant au centre de l'écran
+function zoom(){if(reduce)return;const k=Math.min(1,Math.max(0,scrollY/innerHeight));lgs.style.setProperty('--ls',(1+.18*k).toFixed(3));lg.style.opacity=(1-.6*k).toFixed(3);
+  const r=orb.getBoundingClientRect(),d=Math.min(1,Math.abs((r.top+r.height/2)-innerHeight/2)/(innerHeight*.75));orb.style.setProperty('--os',(1.1-.28*d).toFixed(3))}
+addEventListener('scroll',zoom,{passive:true});zoom();
+})();
+</script>
+
+</body>
+</html>
